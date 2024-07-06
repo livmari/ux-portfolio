@@ -1,16 +1,45 @@
-.heroTextLayout,
-.heroTextRow {
-  @apply gap-y-1 sm:gap-y-3 lg:gap-y-4;
-}
+.layout {
+  @apply grid grid-cols-1 gap-y-1 sm:gap-y-2;
 
-.heroTextLayout {
-  @apply grid grid-cols-1;
-}
+  div {
+    @apply flex flex-wrap items-center gap-x-3 gap-y-1 sm:gap-y-2;
 
-.heroTextRow {
-  @apply flex gap-x-3 flex-wrap items-center;
-}
+    h1 {
+      @apply whitespace-nowrap;
+    }
 
-.heroTextImage {
-  @apply h-10 sm:h-12 lg:h-16 object-cover rounded-full;
+    img {
+      @apply h-[45px] sm:h-[72px] md:h-[90px] lg:h-[72px] object-cover rounded-full;
+    }
+  }
+
+  div:first-child {
+    @apply flex-nowrap;
+
+    img {
+      @apply w-40 lg:w-48 xl:w-64 ml-1 sm:ml-2;
+    }
+  }
+
+  div:nth-child(2) {
+    div:first-child {
+      @apply w-full sm:w-auto;
+
+      img {
+        @apply w-40 sm:w-48 lg:w-32 xl:w-52 mr-1 sm:mr-2;
+      }
+    }
+  }
+
+  div:last-child {
+    @apply w-full;
+
+    div:first-child {
+      @apply w-full sm:w-auto;
+
+      img {
+        @apply w-32 md:w-24 mx-1 sm:mx-2;
+      }
+    }
+  }
 }
