@@ -1,0 +1,16 @@
+.heroTextLayout,
+.heroTextRow {
+  @apply gap-y-1 sm:gap-y-3 lg:gap-y-4;
+}
+
+.heroTextLayout {
+  @apply grid grid-cols-1;
+}
+
+.heroTextRow {
+  @apply flex gap-x-3 flex-wrap items-center;
+}
+
+.heroTextImage {
+  @apply h-10 sm:h-12 lg:h-14 object-cover rounded-full;
+}

@@ -1,0 +1,11 @@
+@mixin page-content-layout {
+  @apply p-7 pb-8 w-screen min-h-screen;
+}
+
+@layer base {
+  body {
+    main {
+      @include page-content-layout();
+    }
+  }
+}

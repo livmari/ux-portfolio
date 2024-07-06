@@ -1,0 +1,11 @@
+@layer base {
+  * {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .heading-1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl leading-normal;
+  }
+}
