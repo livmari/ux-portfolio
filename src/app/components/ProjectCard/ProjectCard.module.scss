@@ -1,0 +1,56 @@
+@keyframes nudge {
+  0% {
+    @apply pr-4;
+  }
+
+  50% {
+    @apply pr-2;
+  }
+
+  100% {
+    @apply pr-4;
+  }
+}
+
+.card {
+  @apply relative cursor-pointer;
+
+  .floatingThing {
+    @apply /* positioning */
+    absolute top-4 right-4
+    /* inner layout */
+    py-2 px-4 gap-2 flex items-center justify-center
+    /* palette */
+    bg-white
+    /* edges */
+    rounded-full;
+
+    svg {
+      @apply h-5 w-5;
+    }
+  }
+
+  .bannerImage {
+    @apply h-[500px] mb-2 w-full rounded-3xl object-cover;
+  }
+
+  .descriptorsBox {
+    @apply flex flex-col gap-1;
+  }
+}
+
+.card:hover {
+  .floatingThing {
+    @apply /* animations */
+    transition-all
+    /* palette */
+    text-primary-700
+    /* background elements */
+    backdrop-blur-sm;
+    animation: nudge 1s infinite;
+
+    .floatingLabel {
+      @apply inline;
+    }
+  }
+}

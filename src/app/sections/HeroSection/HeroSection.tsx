@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   const textSnippet4 = [`and`, `empower`, `users`]
 
   return (
-    <div>
+    <section>
       <div className={styles.heroTextLayout}>
         <h1 className={`heading-1 ${styles.heroTextRow}`}>
           {textSnippet1.map(word => (
@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
           ))}
         </h1>
       </div>
-    </div>
+    </section>
   )
 }
 
