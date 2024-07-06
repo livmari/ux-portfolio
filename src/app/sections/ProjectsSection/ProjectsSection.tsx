@@ -6,18 +6,20 @@ import { nanoid } from 'nanoid'
 import styles from './ProjectsSection.module.scss'
 
 const ProjectsSection: React.FC = () => (
-  <section className={styles.bento}>
-    <h2 className={'heading-2'}>Selected work</h2>
+  <section>
+    <h2 className={'heading-2'}>Previous work</h2>
 
-    {projects.map(project => (
-      <ProjectCard
-        image={project.bannerImage}
-        title={project.title}
-        year={project.year}
-        company={project.company}
-        key={nanoid()}
-      />
-    ))}
+    <div className={styles.bento}>
+      {projects.map(project => (
+        <ProjectCard
+          image={project.bannerImage}
+          title={project.title}
+          year={project.year}
+          company={project.company}
+          key={nanoid()}
+        />
+      ))}
+    </div>
   </section>
 )
 
