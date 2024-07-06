@@ -14,6 +14,7 @@ const config: Config = {
       black: colors.black,
       white: colors.white,
       gray: colors.neutral,
+      primary: colors.violet,
     },
   },
   plugins: [],
