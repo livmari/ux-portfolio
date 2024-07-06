@@ -1,3 +1,8 @@
 .bento {
-  @apply grid gap-8;
+  @apply grid grid-cols-1 gap-14 lg:grid-cols-2;
+
+  h2,
+  div:nth-child(2) {
+    @apply lg:col-span-2;
+  }
 }
