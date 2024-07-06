@@ -1,5 +1,6 @@
-import type { Metadata } from 'next'
 import { Mulish } from 'next/font/google'
+import type { Metadata } from 'next'
+
 import '@/styles/globals.scss'
 
 const mulish = Mulish({ subsets: ['latin'] })
@@ -14,6 +15,13 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => {
+  const pageSections = [
+    { path: '', label: 'Hi' },
+    { path: '', label: 'Projects' },
+    { path: '', label: 'About' },
+    { path: '', label: 'Contact' },
+  ]
+
   return (
     <html lang='en'>
       <body className={mulish.className}>{children}</body>
