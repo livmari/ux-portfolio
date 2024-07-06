@@ -1,8 +1,8 @@
 .layout {
-  @apply grid grid-cols-1 gap-y-1 sm:gap-y-2;
+  @apply grid grid-cols-1 gap-y-1 sm:gap-y-2 md:gap-y-4;
 
   div {
-    @apply flex flex-wrap items-center gap-x-3 gap-y-1 sm:gap-y-2;
+    @apply flex flex-wrap items-center gap-x-3 gap-y-1 sm:gap-y-2 md:gap-y-4;
 
     h1 {
       @apply whitespace-nowrap;
@@ -26,7 +26,7 @@
       @apply w-full sm:w-auto;
 
       img {
-        @apply w-40 sm:w-48 lg:w-32 xl:w-52 mr-1 sm:mr-2;
+        @apply w-40 sm:w-48 lg:w-36 xl:w-52 mr-1 sm:mr-2;
       }
     }
   }
@@ -38,7 +38,7 @@
       @apply w-full sm:w-auto;
 
       img {
-        @apply w-32 md:w-24 mx-1 sm:mx-2;
+        @apply w-32 md:w-24 md:w-32 mx-1 sm:mx-2;
       }
     }
   }
