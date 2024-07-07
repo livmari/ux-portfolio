@@ -1,0 +1,40 @@
+.wrapper {
+  @apply border-b transition-all duration-200;
+
+  * {
+    @apply transition-all duration-200;
+  }
+
+  button.header {
+    @apply py-4 text-left w-full flex items-center gap-4 cursor-pointer;
+
+    h4 {
+      @apply text-left w-full;
+    }
+
+    .toggleIcon {
+      @apply h-5 w-5;
+    }
+  }
+
+  div.content {
+    @apply h-0 opacity-0;
+  }
+}
+
+.wrapper.isExpanded {
+  @apply transition-all duration-200;
+
+  * {
+    @apply transition-all duration-200;
+  }
+  .header {
+    .toggleIcon {
+      @apply rotate-45;
+    }
+  }
+
+  div.content {
+    @apply h-auto opacity-100 pb-8;
+  }
+}
