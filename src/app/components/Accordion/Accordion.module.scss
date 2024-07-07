@@ -1,0 +1,39 @@
+div.accordion {
+  * {
+    @apply transition-all duration-200;
+  }
+
+  @apply border-t;
+}
+
+div.collapsible {
+  @apply border-b;
+}
+
+button.header {
+  @apply /* sizing */
+  w-full
+  /* whitespace */
+  py-4
+  /* inner layout */
+  flex justify-between items-center;
+
+  span.label {
+    @apply /* sizing */
+    w-full
+    /* typography */
+    text-left;
+  }
+
+  .icon {
+    @apply h-5 w-5;
+  }
+}
+
+div.displayedContent {
+  @apply pb-8 h-auto pointer-events-auto;
+}
+
+div.hiddenContent {
+  @apply overflow-hidden h-0 pointer-events-none;
+}
