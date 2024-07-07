@@ -7,7 +7,7 @@ import styles from './Accordion.module.scss'
 import { PlusIcon } from '@heroicons/react/24/outline'
 
 interface AccordionProps {
-  sections: { title: string; content: string }
+  sections: { title: string; content: string }[]
 }
 
 const Accordion: React.FC<AccordionProps> = ({ sections }) => {
@@ -20,32 +20,36 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
   return (
     <div className={`${styles.accordion}`}>
-      {sections.map((section, index) => (
-        <div className={`${styles.collapsible}`}>
-          <button
-            onClick={() => handleCollapsibleClick(index)}
-            className={styles.header}
-          >
-            <span className={`${styles.label} heading-4`}>{section.title}</span>
+      {sections.map(
+        (section: { title: String; content: String }, index: Number) => (
+          <div className={`${styles.collapsible}`}>
+            <button
+              onClick={() => handleCollapsibleClick(index)}
+              className={styles.header}
+            >
+              <span className={`${styles.label} heading-4`}>
+                {section.title}
+              </span>
 
-            <PlusIcon
-              className={`${index === expandedIndex && 'rotate-45'} ${
-                styles.icon
-              }`}
-            />
-          </button>
+              <PlusIcon
+                className={`${index === expandedIndex && 'rotate-45'} ${
+                  styles.icon
+                }`}
+              />
+            </button>
 
-          <div
-            className={
-              index === expandedIndex
-                ? styles.displayedContent
-                : styles.hiddenContent
-            }
-          >
-            {section.content}
+            <div
+              className={
+                index === expandedIndex
+                  ? styles.displayedContent
+                  : styles.hiddenContent
+              }
+            >
+              {section.content}
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      )}
     </div>
   )
 }
