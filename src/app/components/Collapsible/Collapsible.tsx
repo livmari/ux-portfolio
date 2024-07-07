@@ -19,10 +19,10 @@ const Collapsible: React.FC<CollapsibleType> = ({
       className={`${styles.wrapper} ${showContent ? styles.isExpanded : ''}`}
     >
       <button
-        className={`${styles.header}`}
+        className={`heading-4 ${styles.header}`}
         onClick={() => setShowContent(!showContent)}
       >
-        <h4 className={`heading-4`}>{title}</h4>
+        {title}
 
         <PlusIcon className={`${styles.toggleIcon}`} />
       </button>
