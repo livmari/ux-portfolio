@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply /* layout */
-    py-40 px-6
+    py-40 px-6 sm:px-12
     /* typography */
     text-accent-950 antialiased
     /* background */
