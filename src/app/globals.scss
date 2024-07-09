@@ -7,18 +7,22 @@
     @apply /* layout */
     py-40 px-6 sm:px-12
     /* typography */
-    text-accent-950 antialiased
+    text-gray-700 antialiased leading-loose
     /* background */
-    bg-primary-50;
+    bg-gray-50;
   }
 }
 
 @layer components {
-  .page-sections-layout {
+  .page-layout {
     @apply /* sizing */
     container mx-auto w-full max-w-screen-lg
     /* layout */
     grid grid-cols-1 gap-40;
+  }
+
+  .section-layout {
+    @apply grid gap-6;
   }
 }
 
@@ -28,25 +32,19 @@
   .heading-2,
   .heading-3,
   .heading-4 {
-    @apply font-bold;
+    @apply font-bold leading-loose;
   }
 
   .heading-1 {
     @apply /* sizing */
-    text-5xl
-    /* palette */
-    text-accent-500;
-  }
-
-  .heading-2,
-  .heading-3,
-  .heading-4 {
-    @apply text-accent-600;
+    text-5xl md:text-6xl;
   }
 
   .heading-2 {
     @apply /* sizing */
-    text-3xl;
+    text-3xl
+    /* decoration */
+    underline decoration-primary-300 decoration-4 underline-offset-8 decoration-wavy;
   }
 
   .heading-3 {

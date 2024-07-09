@@ -3,7 +3,7 @@ import { aboutAccordionData } from '@/lib/about'
 
 const AboutSection: React.FC = () => {
   return (
-    <section>
+    <section className={'section-layout'}>
       <h2 className={'heading-2'}>About me</h2>
 
       <Accordion sections={aboutAccordionData} />
