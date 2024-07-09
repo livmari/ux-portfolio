@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply /* layout */
+    py-40 px-6
+    /* typography */
+    text-accent-950 antialiased
+    /* background */
+    bg-primary-50;
+  }
+}
+
+@layer components {
+  .page-sections-layout {
+    @apply /* sizing */
+    container mx-auto w-full max-w-screen-lg
+    /* layout */
+    grid grid-cols-1 gap-40;
+  }
+}
+
+@layer utilities {
+  /*h headings */
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4 {
+    @apply font-bold;
+  }
+
+  .heading-1 {
+    @apply /* sizing */
+    text-5xl
+    /* palette */
+    text-accent-500;
+  }
+
+  .heading-2,
+  .heading-3,
+  .heading-4 {
+    @apply text-accent-600;
+  }
+
+  .heading-2 {
+    @apply /* sizing */
+    text-3xl;
+  }
+
+  .heading-3 {
+    @apply /* sizing */
+    text-2xl;
+  }
+
+  .heading-4 {
+    @apply /* sizing */
+    text-xl;
+  }
+}

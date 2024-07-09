@@ -22,7 +22,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
     <div className={`${styles.accordion}`}>
       {sections.map(
         (section: { title: String; content: String }, index: Number) => (
-          <div className={`${styles.collapsible}`}>
+          <div className={`${styles.collapsible}`} key={nanoid()}>
             <button
               onClick={() => handleCollapsibleClick(index)}
               className={styles.header}

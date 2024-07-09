@@ -1,13 +1,13 @@
 div.accordion {
+  @apply border-t border-primary-300;
+
   * {
     @apply transition-all duration-200;
   }
-
-  @apply border-t;
 }
 
 div.collapsible {
-  @apply border-b;
+  @apply border-b border-primary-300;
 }
 
 button.header {
