@@ -1,0 +1,11 @@
+.responsiveLineBreak {
+  @apply sm:hidden md:inline;
+}
+
+.responsiveExclamation {
+  @apply hidden sm:inline md:hidden;
+}
+
+.makeItPop {
+  @apply text-primary-500;
+}
