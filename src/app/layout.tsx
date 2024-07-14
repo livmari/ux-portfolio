@@ -1,9 +1,9 @@
-import { Mulish } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import './globals.scss'
 
-const mulish = Mulish({ subsets: ['latin'] })
+const manrope = Manrope({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,16 +15,9 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => {
-  const pageSections = [
-    { path: '', label: 'Hi' },
-    { path: '', label: 'Projects' },
-    { path: '', label: 'About' },
-    { path: '', label: 'Contact' },
-  ]
-
   return (
     <html lang='en'>
-      <body className={mulish.className}>{children}</body>
+      <body className={manrope.className}>{children}</body>
     </html>
   )
 }

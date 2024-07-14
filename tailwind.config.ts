@@ -14,11 +14,16 @@ const config: Config = {
       black: colors.black,
       white: colors.white,
       gray: colors.zinc,
-      primary: colors.rose,
+      primary: colors.zinc,
     },
     extend: {
       screens: {
         xs: '400px',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+        '6xl': '3rem',
       },
     },
   },

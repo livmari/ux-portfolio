@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply /* layout */
-    py-40 px-6 sm:px-12
+    p-6 sm:p-12
     /* typography */
     text-primary-800 antialiased leading-loose
     /* background */
@@ -22,7 +22,9 @@
     @apply /* sizing */
     container mx-auto w-full max-w-screen-lg
     /* layout */
-    grid grid-cols-1 gap-40;
+    py-40 grid grid-cols-1 gap-40
+    /* border */
+    rounded-3xl;
   }
 
   .section-layout {
@@ -36,28 +38,28 @@
   .heading-2,
   .heading-3,
   .heading-4 {
-    @apply font-bold leading-loose;
+    @apply font-semibold leading-loose;
   }
 
   .heading-1 {
     @apply /* sizing */
-    text-5xl md:text-6xl;
+    text-4xl sm:text-5xl md:text-6xl lg:text-4xl;
   }
 
   .heading-2 {
     @apply /* sizing */
-    text-3xl
+    text-2xl
     /* decoration */
     /* underline decoration-primary-400 decoration-4 underline-offset-8 */;
   }
 
   .heading-3 {
     @apply /* sizing */
-    text-2xl;
+    text-xl;
   }
 
   .heading-4 {
     @apply /* sizing */
-    text-xl;
+    text-lg;
   }
 }
