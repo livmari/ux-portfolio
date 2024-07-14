@@ -8,7 +8,7 @@
   /* background */
   bg-white
   /* border */
-  rounded-lg shadow-sm;
+  rounded-lg;
 }
 
 .iconFrame {
@@ -19,11 +19,11 @@
   /* layout */
   p-1
   /* typography */
-  text-gray-400
+  text-accent-800
   /* background */
-  bg-gray-100
+  bg-accent-50
   /* borders */
-  rounded-full
+  border border-accent-200 rounded-full
   /* interactions */
   opacity-0;
 }
@@ -54,8 +54,6 @@
 }
 
 .frame:hover {
-  @apply shadow;
-
   .iconFrame {
     @apply /* interactions */
     opacity-100;
@@ -68,9 +66,9 @@
 
 .frame,
 .frame:hover {
-  @apply transition-all duration-500;
+  @apply transition-all duration-700;
 
   * {
-    @apply transition-all duration-500;
+    @apply transition-all duration-700;
   }
 }
