@@ -6,10 +6,9 @@ const HeroSection: React.FC = () => {
       <h1 className={`heading-1`}>
         Hi, I'm Liv Mari
         <span className={styles.responsiveExclamation}>!</span>{' '}
-        <br className={styles.responsiveLineBreak} /> I design{' '}
-        <span className={styles.makeItPop}>thoughtful</span> digital experiences
-        that spark <span className={styles.makeItPop}>joy</span> and{' '}
-        <span className={styles.makeItPop}>empower</span> users
+        <br className={styles.responsiveLineBreak} /> I design thoughtful
+        digital experiences that spark joy and{' '}
+        <span className={styles.empower}>empower</span> users
       </h1>
     </section>
   )

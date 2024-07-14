@@ -19,11 +19,11 @@
   /* layout */
   p-1
   /* typography */
-  text-accent-800
+  text-primary-800
   /* background */
-  bg-accent-50
+  bg-primary-50
   /* borders */
-  border border-accent-200 rounded-full
+  border border-primary-200 rounded-full
   /* interactions */
   opacity-0;
 }
@@ -50,11 +50,11 @@
 }
 
 .preview:nth-child(odd) {
-  @apply bg-accent-100;
+  @apply bg-primary-100;
 }
 
 .frame:hover {
-  @apply shadow-sm;
+  @apply shadow-md shadow-primary-200/50;
 
   .iconFrame {
     @apply /* interactions */

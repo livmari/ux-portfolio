@@ -6,6 +6,6 @@
   @apply hidden sm:inline md:hidden;
 }
 
-.makeItPop {
-  @apply text-primary-500;
+.empower {
+  @apply underline underline-offset-8 decoration-primary-200 decoration-8;
 }

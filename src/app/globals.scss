@@ -7,13 +7,13 @@
     @apply /* layout */
     py-40 px-6 sm:px-12
     /* typography */
-    text-gray-700 antialiased leading-loose
+    text-primary-800 antialiased leading-loose
     /* background */
     bg-gray-50;
   }
 
   small {
-    @apply text-gray-600;
+    @apply text-primary-700;
   }
 }
 
