@@ -14,7 +14,7 @@
 .designRow,
 .joyRow,
 .nestedRow {
-  @apply flex gap-x-3 justify-start items-center;
+  @apply flex gap-x-3 justify-items-start;
 }
 
 .layout,
