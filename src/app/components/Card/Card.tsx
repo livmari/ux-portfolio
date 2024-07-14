@@ -1,5 +1,3 @@
-import { EyeIcon } from '@heroicons/react/16/solid'
-
 import styles from './Card.module.scss'
 
 interface CardProps {
@@ -10,9 +8,6 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ company, year, title }) => (
   <button className={styles.frame}>
-    <div className={styles.iconFrame}>
-      <EyeIcon />
-    </div>
     <div className={styles.descriptors}>
       <small>
         {company}, {year}

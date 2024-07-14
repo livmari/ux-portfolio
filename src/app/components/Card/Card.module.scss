@@ -1,6 +1,6 @@
 .frame {
   @apply /* positioning */
-  relative
+  relative box-content
   /* layout */
   overflow-hidden
   /* typography */
@@ -8,24 +8,7 @@
   /* background */
   bg-white
   /* border */
-  rounded-lg;
-}
-
-.iconFrame {
-  @apply /* positioning */
-  absolute top-4 right-4
-  /* sizing */
-  h-6 w-6
-  /* layout */
-  p-1
-  /* typography */
-  text-primary-800
-  /* background */
-  bg-primary-50
-  /* borders */
-  border border-primary-200 rounded-full
-  /* interactions */
-  opacity-0;
+  rounded-lg border-4 border-gray-50;
 }
 
 .descriptors {
@@ -54,12 +37,7 @@
 }
 
 .frame:hover {
-  @apply shadow-md shadow-primary-200/50;
-
-  .iconFrame {
-    @apply /* interactions */
-    opacity-100;
-  }
+  @apply border-primary-50;
 
   .preview {
     @apply ml-0;
