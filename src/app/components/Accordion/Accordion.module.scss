@@ -1,5 +1,5 @@
 div.accordion {
-  @apply border-t border-primary-300;
+  @apply border-t;
 
   * {
     @apply transition-all duration-200;
@@ -7,7 +7,7 @@ div.accordion {
 }
 
 div.collapsible {
-  @apply border-b border-primary-300;
+  @apply border-b;
 }
 
 button.header {
