@@ -48,7 +48,7 @@
 
   .heading-2 {
     @apply /* sizing */
-    text-2xl
+    text-3xl sm:text-4xl lg:text-3xl
     /* decoration */
     /* underline decoration-primary-400 decoration-4 underline-offset-8 */;
   }

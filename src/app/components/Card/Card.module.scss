@@ -8,7 +8,7 @@
   /* background */
   bg-white
   /* border */
-  rounded-lg border border-gray-50;
+  rounded-xl border border-gray-100;
 }
 
 .descriptors {
@@ -27,17 +27,13 @@
   /* sizing */
   h-64 lg:h-52 min-w-52 xs:min-w-64 lg:min-w-52
   /* background */
-  bg-primary-100
+  object-cover
   /* border */
-  rounded-t-md;
-}
-
-.preview:nth-child(odd) {
-  @apply bg-primary-100;
+  rounded-t-lg;
 }
 
 .frame:hover {
-  @apply border-primary-100;
+  @apply shadow-sm;
 
   .preview {
     @apply ml-0;
