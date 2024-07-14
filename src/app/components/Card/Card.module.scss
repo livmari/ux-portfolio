@@ -8,7 +8,7 @@
   /* background */
   bg-white
   /* border */
-  rounded-lg border-4 border-gray-50;
+  rounded-lg border border-gray-50;
 }
 
 .descriptors {
@@ -37,7 +37,7 @@
 }
 
 .frame:hover {
-  @apply border-primary-50;
+  @apply border-primary-100;
 
   .preview {
     @apply ml-0;
