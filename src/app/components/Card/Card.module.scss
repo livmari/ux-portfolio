@@ -33,7 +33,7 @@
 }
 
 .frame:hover {
-  @apply shadow-sm;
+  @apply shadow-sm border-primary-200;
 
   .preview {
     @apply ml-0;

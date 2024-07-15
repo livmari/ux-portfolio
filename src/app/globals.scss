@@ -5,15 +5,15 @@
 @layer base {
   body {
     @apply /* layout */
-    p-6 sm:p-12
+    px-6 sm:px-12 py-40
     /* typography */
-    text-primary-800 antialiased leading-loose
+    text-gray-700 antialiased leading-loose
     /* background */
     bg-gray-50;
   }
 
   small {
-    @apply text-primary-700;
+    @apply text-gray-600;
   }
 }
 
@@ -22,7 +22,7 @@
     @apply /* sizing */
     container mx-auto w-full max-w-screen-lg
     /* layout */
-    py-40 grid grid-cols-1 gap-40
+    grid grid-cols-1 gap-40
     /* border */
     rounded-3xl;
   }

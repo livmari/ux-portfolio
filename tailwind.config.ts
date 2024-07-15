@@ -14,7 +14,7 @@ const config: Config = {
       black: colors.black,
       white: colors.white,
       gray: colors.zinc,
-      primary: colors.zinc,
+      primary: colors.violet,
     },
     extend: {
       screens: {
