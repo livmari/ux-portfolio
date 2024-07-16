@@ -7,7 +7,7 @@ import {
 
 const Home = () => {
   return (
-    <main className={'page-layout'}>
+    <main className={'page-layout page-py-lg'}>
       <HeroSection />
 
       <ProjectsSection />

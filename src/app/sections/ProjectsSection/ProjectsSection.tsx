@@ -10,8 +10,9 @@ const ProjectsSection: React.FC = () => (
     <h2 className={'heading-2'}>Selected work</h2>
 
     <div className={styles.bento}>
-      {projects.map(project => (
+      {projects.map((project, index) => (
         <Card
+          slug={index.toString()}
           company={project.company}
           year={project.year}
           title={project.title}

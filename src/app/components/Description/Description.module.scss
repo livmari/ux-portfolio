@@ -1,0 +1,15 @@
+.layout {
+  @apply flex;
+
+  p:first-child {
+    @apply text-gray-600;
+  }
+}
+
+.column {
+  @apply flex-col;
+}
+
+.row {
+  @apply flex-row;
+}
