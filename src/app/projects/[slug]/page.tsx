@@ -15,7 +15,7 @@ const Project = ({ params }: { params: { slug: string } }) => {
   const project = projects[parseInt(params.slug)]
 
   return (
-    <main className={styles.frame}>
+    <main className={`'page-layout page-py-lg' ${styles.frame}`}>
       <Button
         label={'All projects'}
         leftIcon={<ArrowLeftIcon />}

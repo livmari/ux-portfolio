@@ -1,25 +1,21 @@
 import { nanoid } from 'nanoid'
 
 import { projects } from '@/lib/projects'
-import { Card } from '@/app/components'
+import { ProjectPreview } from '@/app/components'
 
 import styles from './ProjectsSection.module.scss'
 
 const ProjectsSection: React.FC = () => (
-  <section className={'section-layout'}>
-    <h2 className={'heading-2'}>Selected work</h2>
-
-    <div className={styles.bento}>
-      {projects.map((project, index) => (
-        <Card
-          slug={index.toString()}
-          company={project.company}
-          year={project.year}
-          title={project.title}
-          key={nanoid()}
-        />
-      ))}
-    </div>
+  <section className={styles.layout}>
+    {projects.map((project, index) => (
+      <ProjectPreview
+        title={project.title}
+        imageSrc={project.bannerImage.path}
+        imageAlt={project.bannerImage.alt}
+        slug={index.toString()}
+        key={nanoid()}
+      />
+    ))}
   </section>
 )
 

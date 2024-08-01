@@ -14,14 +14,14 @@
 .designRow,
 .joyRow,
 .nestedRow {
-  @apply flex gap-x-3 justify-items-start;
+  @apply flex gap-x-3 justify-items-start lg:items-center;
 }
 
 .layout,
 .helloRow,
 .designRow,
 .joyRow {
-  @apply gap-y-1 sm:gap-y-2;
+  @apply gap-y-2 sm:gap-y-3;
 }
 
 .designRow,

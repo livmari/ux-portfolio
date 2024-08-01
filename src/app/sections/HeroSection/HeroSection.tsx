@@ -54,6 +54,10 @@ const HeroSection: React.FC = () => {
 
         <h1 className={`heading-1 ${styles.text}`}>and empower users</h1>
       </div>
+
+      <p className={'text-xl md:text-2xl lg:text-xl text-muted mt-4 italic'}>
+        Currently: Senior UX designer at Volvo Cars
+      </p>
     </section>
   )
 }

@@ -7,13 +7,13 @@
     @apply /* layout */
     px-6 sm:px-12
     /* typography */
-    text-gray-700 antialiased
+    text-gray-800 antialiased
     /* background */
     bg-gray-50;
   }
 
-  small {
-    @apply text-gray-600;
+  a {
+    @apply hover:text-primary-700 decoration-1 underline underline-offset-8;
   }
 }
 
@@ -31,6 +31,11 @@
 }
 
 @layer utilities {
+  /* text colors */
+  .text-muted {
+    @apply text-gray-500;
+  }
+
   /*h headings */
   .heading-1,
   .heading-2,
