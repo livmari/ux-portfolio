@@ -22,7 +22,7 @@
   }
 
   .layout-section {
-    @apply mx-auto container max-w-screen-lg;
+    @apply mx-auto container max-w-screen-lg grid gap-24;
   }
 
   .p-section {
