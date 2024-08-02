@@ -1,0 +1,13 @@
+/* TODO: Remove when testing is finished */
+.frame,
+.meta {
+  @apply border border-gray-500;
+}
+
+.image {
+  @apply w-full bg-gray-200 rounded-md;
+}
+
+.frame {
+  @apply grid md:grid-cols-2 gap-6 md:gap-10;
+}
