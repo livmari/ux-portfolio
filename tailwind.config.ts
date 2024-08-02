@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -7,7 +8,12 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: colors.zinc,
+        primary: colors.pink,
+      },
+    },
   },
   plugins: [],
 }

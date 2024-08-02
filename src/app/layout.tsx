@@ -17,7 +17,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang={'en'}>
-      <body className={mulish.className}>{children}</body>
+      <body className={`${mulish.className}`}>{children}</body>
     </html>
   )
 }
