@@ -1,0 +1,9 @@
+.frame {
+  @apply inline-flex border bg-white justify-items-center items-center gap-1;
+}
+
+.iconFrame {
+  svg {
+    @apply h-4 w-4;
+  }
+}

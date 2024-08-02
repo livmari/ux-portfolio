@@ -1,0 +1,16 @@
+.frame {
+  @apply py-6 flex gap-6 mx-auto container max-w-screen-lg;
+}
+
+.button {
+  @apply /* layout */
+  flex gap-1 justify-items-center items-center
+  /* lettering */
+  tracking-wide
+  /* colors */
+  text-gray-600 hover:text-primary-600;
+}
+
+.icon {
+  @apply h-4 w-4;
+}
