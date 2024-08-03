@@ -27,10 +27,17 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
       />
 
       <div className={styles.meta}>
-        <p>{published ? 'Case study' : 'Coming soon'}</p>
-        <h3>{title}</h3>
+        <p className={styles.text}>Case study</p>
 
-        {published && <Link href={`/projects/${slug}`}>Read more</Link>}
+        <h2 className={styles.title}>{title}</h2>
+
+        {published ? (
+          <Link href={`/projects/${slug}`} className={styles.text}>
+            Read more
+          </Link>
+        ) : (
+          <p className={styles.text}>Coming soon</p>
+        )}
       </div>
     </div>
   )

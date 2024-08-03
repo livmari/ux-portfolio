@@ -4,21 +4,51 @@
 
 @layer base {
   body {
-    @apply bg-gray-50;
+    @apply subpixel-antialiased bg-gray-50 text-gray-700;
+  }
+
+  ::selection {
+    @apply bg-primary-200 text-primary-700;
+  }
+
+  p,
+  a,
+  li,
+  ul,
+  ol {
+    @apply tracking-wide font-light;
   }
 
   a {
-    @apply underline hover:text-primary-600;
+    @apply underline underline-offset-4 decoration-1 hover:text-primary-600;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-semibold;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
   }
 }
 
 @layer components {
   .layout-page {
-    @apply grid gap-40;
+    @apply grid gap-48;
   }
 
   .layout-section {
-    @apply mx-auto container max-w-screen-lg grid gap-24;
+    @apply mx-auto container max-w-screen-lg grid gap-32;
   }
 
   .p-section {

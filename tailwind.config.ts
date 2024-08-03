@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         gray: colors.zinc,
-        primary: colors.pink,
+        primary: colors.indigo,
       },
     },
   },
