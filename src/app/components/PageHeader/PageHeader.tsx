@@ -34,7 +34,7 @@ const PageHeader: React.FC = () => {
     if (emailCopied) {
       timer = setTimeout(() => {
         setEmailCopied(false)
-      }, 600)
+      }, 800)
 
       return () => clearTimeout(timer)
     }
@@ -44,18 +44,6 @@ const PageHeader: React.FC = () => {
     <header className={`p-section ${styles.frame}`}>
       {pathname === '/' ? (
         <div className={styles.externalLinksFrame}>
-          <button
-            className={styles.button}
-            onClick={() => copyEmailToClipboard()}
-          >
-            {emailCopied ? (
-              <CheckIcon className={styles.icon} />
-            ) : (
-              <DocumentDuplicateIcon className={styles.icon} />
-            )}
-            Email
-          </button>
-
           <button
             className={styles.button}
             onClick={() =>
@@ -93,6 +81,19 @@ const PageHeader: React.FC = () => {
             }
           >
             Figma
+          </button>
+
+          <button
+            className={styles.button}
+            onClick={() => copyEmailToClipboard()}
+          >
+            {emailCopied ? 'Copied!' : 'Email'}
+
+            {emailCopied ? (
+              <CheckIcon className={styles.icon} />
+            ) : (
+              <DocumentDuplicateIcon className={styles.icon} />
+            )}
           </button>
         </div>
       ) : (

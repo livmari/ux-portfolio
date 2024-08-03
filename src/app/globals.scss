@@ -16,11 +16,11 @@
   li,
   ul,
   ol {
-    @apply tracking-wide leading-relaxed font-light;
+    @apply tracking-wide leading-relaxed font-extralight;
   }
 
   a {
-    @apply underline underline-offset-4 decoration-1 hover:text-primary-600;
+    @apply underline underline-offset-4 decoration-primary-500 decoration-1 hover:text-primary-600;
   }
 
   h1,
@@ -30,7 +30,7 @@
   }
 
   h1 {
-    @apply text-5xl;
+    @apply text-5xl sm:text-6xl;
   }
 
   h2 {
