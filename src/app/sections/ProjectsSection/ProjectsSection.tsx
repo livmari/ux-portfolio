@@ -1,11 +1,13 @@
 import { nanoid } from 'nanoid'
 
 import { projects } from '@/lib/projects'
-import { ProjectPreview } from '@/app/components'
+import { ProjectPreview } from '@/components'
+
+import styles from './ProjectsSection.module.scss'
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className={`layout-section p-section`}>
+    <section className={`layout-section p-section ${styles.frame}`}>
       {projects.map(project => (
         <ProjectPreview
           title={project.title}
