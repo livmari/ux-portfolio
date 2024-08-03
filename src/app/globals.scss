@@ -16,7 +16,7 @@
   li,
   ul,
   ol {
-    @apply tracking-wide font-light;
+    @apply tracking-wide leading-relaxed font-light;
   }
 
   a {
@@ -26,7 +26,7 @@
   h1,
   h2,
   h3 {
-    @apply font-semibold;
+    @apply font-semibold leading-relaxed;
   }
 
   h1 {

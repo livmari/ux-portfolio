@@ -2,7 +2,7 @@ import { AboutSection, HeroSection, ProjectsSection } from './sections'
 
 const Home = () => {
   return (
-    <main className={`layout-page`}>
+    <main className={`layout-page my-32`}>
       <HeroSection />
 
       <ProjectsSection />

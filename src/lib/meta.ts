@@ -2,23 +2,19 @@ export const myEmail = 'livmari.lervik@icloud.com'
 
 export const aboutMeList = [
   {
-    title: 'Title 1',
+    title: 'What is a UX designer?',
     content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
   },
   {
-    title: 'Title 2',
+    title: 'What are my values?',
     content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
   },
   {
-    title: 'Title 3',
+    title: 'How do I work?',
     content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
   },
   {
-    title: 'Title 4',
-    content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
-  },
-  {
-    title: 'Title 5',
+    title: 'What is my background?',
     content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
   },
 ]

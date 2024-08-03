@@ -9,7 +9,7 @@ type ProjectType = {
 
 const projects: ProjectType[] = [
   {
-    title: 'Project title 1',
+    title: 'Streamlined supply chain management',
     year: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
@@ -17,7 +17,7 @@ const projects: ProjectType[] = [
     slug: 'project-title-1',
   },
   {
-    title: 'Project title 2',
+    title: 'Issue tracking in accessible system health dashboard',
     year: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
@@ -25,7 +25,7 @@ const projects: ProjectType[] = [
     slug: 'project-title-2',
   },
   {
-    title: 'Project title 3',
+    title: 'Complex component and design system maintenance',
     year: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
