@@ -1,13 +1,21 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { CheckIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline'
+import { usePathname } from 'next/navigation'
+import {
+  CheckIcon,
+  DocumentDuplicateIcon,
+  ArrowUturnLeftIcon,
+} from '@heroicons/react/24/outline'
 
 import { myEmail } from '@/lib/meta'
 
 import styles from './PageHeader.module.scss'
+import Link from 'next/link'
 
 const PageHeader: React.FC = () => {
+  const pathname = usePathname()
+
   const [emailCopied, setEmailCopied] = useState<boolean>(false)
 
   const copyEmailToClipboard = async () => {
@@ -34,63 +42,64 @@ const PageHeader: React.FC = () => {
 
   return (
     <header className={`p-section ${styles.frame}`}>
-      <button className={styles.button} onClick={() => copyEmailToClipboard()}>
-        {emailCopied ? (
-          <CheckIcon className={styles.icon} />
-        ) : (
-          <DocumentDuplicateIcon className={styles.icon} />
-        )}
-        Email
-      </button>
+      {pathname === '/' ? (
+        <div className={styles.externalLinksFrame}>
+          <button
+            className={styles.button}
+            onClick={() => copyEmailToClipboard()}
+          >
+            {emailCopied ? (
+              <CheckIcon className={styles.icon} />
+            ) : (
+              <DocumentDuplicateIcon className={styles.icon} />
+            )}
+            Email
+          </button>
 
-      <button
-        className={styles.button}
-        onClick={() =>
-          window.open(
-            'https://www.linkedin.com/in/livmari/',
-            '_blank',
-            'noopener,noreferrer'
-          )
-        }
-      >
-        LinkedIn
-      </button>
+          <button
+            className={styles.button}
+            onClick={() =>
+              window.open(
+                'https://www.linkedin.com/in/livmari/',
+                '_blank',
+                'noopener,noreferrer'
+              )
+            }
+          >
+            LinkedIn
+          </button>
 
-      <button
-        className={styles.button}
-        onClick={() =>
-          window.open(
-            'https://dribbble.com/livmari',
-            '_blank',
-            'noopener,noreferrer'
-          )
-        }
-      >
-        Dribbble
-      </button>
+          <button
+            className={styles.button}
+            onClick={() =>
+              window.open(
+                'https://dribbble.com/livmari',
+                '_blank',
+                'noopener,noreferrer'
+              )
+            }
+          >
+            Dribbble
+          </button>
 
-      <button
-        className={styles.button}
-        onClick={() =>
-          window.open(
-            'https://www.figma.com/@livmari',
-            '_blank',
-            'noopener,noreferrer'
-          )
-        }
-      >
-        Figma
-      </button>
-
-      {/*  <Button
-        icon={emailCopied ? <CheckIcon /> : <DocumentDuplicateIcon />}
-        label={'Email'}
-        onClick={() => copyEmailToClipboard()}
-      />
-
-      <Button icon={<ArrowTopRightOnSquareIcon />} label={'Dribbble'} />
-
-      <Button icon={<ArrowTopRightOnSquareIcon />} label={'Figma'} /> */}
+          <button
+            className={styles.button}
+            onClick={() =>
+              window.open(
+                'https://www.figma.com/@livmari',
+                '_blank',
+                'noopener,noreferrer'
+              )
+            }
+          >
+            Figma
+          </button>
+        </div>
+      ) : (
+        <Link href={'/'} className={styles.homeLink}>
+          Go back <ArrowUturnLeftIcon />
+        </Link>
+      )}
     </header>
   )
 }

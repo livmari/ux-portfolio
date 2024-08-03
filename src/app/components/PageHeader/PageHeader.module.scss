@@ -1,5 +1,5 @@
 .frame {
-  @apply py-6 flex gap-6 mx-auto container max-w-screen-lg;
+  @apply py-6 mx-auto container max-w-screen-lg flex justify-between items-center;
 }
 
 .button {
@@ -13,4 +13,16 @@
 
 .icon {
   @apply h-4 w-4;
+}
+
+.externalLinksFrame {
+  @apply inline-flex gap-6;
+}
+
+.homeLink {
+  @apply no-underline flex gap-2 whitespace-nowrap items-center;
+
+  svg {
+    @apply h-4 w-4;
+  }
 }
