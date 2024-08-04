@@ -29,7 +29,14 @@ const HeroSection: React.FC = () => {
   let firstLetters = firstRow.split('')
   let secondLetters = secondRow.split('')
 
-  const assignColor = (index: number) => {
+  const firstRowColors = firstLetters.map(
+    (_, index) => colorStyles[index % colorStyles.length]
+  )
+  const secondRowColors = secondLetters.map(
+    (_, index) => colorStyles[index % colorStyles.length]
+  )
+
+  /* const assignColor = (index: number) => {
     let firstColor = colorStyles[0]
 
     colorStyles.shift()
@@ -37,28 +44,30 @@ const HeroSection: React.FC = () => {
     colorStyles.push(firstColor)
 
     return firstColor
-  }
+  } */
 
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
       <h1 className={styles.heading}>
-        {firstLetters.map((letter, index) => (
+        {firstLetters.map((symbol, index) => (
           <span
-            className={letter !== ' ' ? assignColor(index) : ''}
+            className={`${symbol !== ' ' ? styles.symbol : ''} ${
+              symbol !== ' ' ? firstRowColors[index] : ''
+            }`}
             key={nanoid()}
           >
-            {letter}
+            {symbol}
           </span>
         ))}
 
         <br />
 
-        {secondLetters.map((letter, index) => (
+        {secondLetters.map((symbol, index) => (
           <span
-            className={letter !== ' ' ? assignColor(index) : ''}
+            className={symbol !== ' ' ? secondRowColors[index] : ''}
             key={nanoid()}
           >
-            {letter}
+            {symbol}
           </span>
         ))}
       </h1>
