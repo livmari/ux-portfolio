@@ -11,12 +11,8 @@
     @apply bg-primary-200 text-primary-700;
   }
 
-  p,
-  a,
-  li,
-  ul,
-  ol {
-    @apply tracking-wide leading-relaxed font-light;
+  p {
+    @apply tracking-wide leading-normal font-light;
   }
 
   a {
@@ -24,9 +20,12 @@
   }
 
   h1,
+  h1 > span,
   h2,
-  h3 {
-    @apply font-bold leading-relaxed;
+  h2 > span,
+  h3,
+  h3 > span {
+    @apply font-semibold tracking-normal;
   }
 
   h1 {
@@ -52,7 +51,7 @@
   }
 
   .p-section {
-    @apply px-6 sm:px-8 lg:px-0;
+    @apply px-6 sm:px-8;
   }
 }
 
