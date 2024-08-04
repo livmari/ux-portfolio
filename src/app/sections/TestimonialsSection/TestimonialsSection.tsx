@@ -1,7 +1,6 @@
 'use client'
 
 import { nanoid } from 'nanoid'
-import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import { Blockquote, type BlockquoteType } from '@/components'
@@ -11,24 +10,12 @@ import { SCREEN_SM, SCREEN_LG } from '@/lib/screens'
 import styles from './TestimonialsSection.module.scss'
 
 const TestimonialsSection: React.FC = () => {
-  const isSmallestViewport = useMediaQuery({
-    query: `max-width: ${SCREEN_SM - 1}px`,
-  })
+  const isSmallestViewport = useMediaQuery({ maxWidth: SCREEN_SM - 1 })
   const isSmallViewport = useMediaQuery({
-    query: `min-width: ${SCREEN_SM}px, max-width: ${SCREEN_LG - 1}px`,
+    minWidth: SCREEN_SM,
+    maxWidth: SCREEN_LG - 1,
   })
-  const isLargeViewport = useMediaQuery({ query: `min-width: ${SCREEN_SM}px` })
-
-  const [viewportWidth, setViewportWidth] = useState<number>(window.innerWidth)
-
-  useEffect(() => {
-    window.addEventListener('resize', () => setViewportWidth(window.innerWidth))
-
-    return () =>
-      window.removeEventListener('resize', () =>
-        setViewportWidth(window.innerWidth)
-      )
-  }, [])
+  const isLargeViewport = useMediaQuery({ minWidth: SCREEN_LG })
 
   const testimonialsLength = testimonials.length
 
@@ -69,7 +56,7 @@ const TestimonialsSection: React.FC = () => {
           ))}
         </div>
       )}
-      {viewportWidth >= SCREEN_SM && viewportWidth < SCREEN_LG && (
+      {isSmallViewport && (
         <div className={styles.mosaic}>
           <div className={styles.col}>
             {firstSmallViewportTestimonialsList.map(
@@ -99,7 +86,7 @@ const TestimonialsSection: React.FC = () => {
         </div>
       )}
 
-      {viewportWidth >= SCREEN_LG && (
+      {isLargeViewport && (
         <div className={styles.mosaic}>
           {largeViewportTestimonialsLists.map(testimonialList => (
             <div className={styles.col} key={nanoid()}>
