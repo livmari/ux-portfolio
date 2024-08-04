@@ -14,8 +14,8 @@ export const aboutMeList = [
 
         <p>
           I usually work as a "UX generalist", which means that I float in
-          between research and visual design, grabbing the tools needed in any
-          given moment, based on my previous experience.
+          between research and visual design, grabbing the tools needed in the
+          given moment, based on the context and my previous experience.
         </p>
       </>
     ),
@@ -60,6 +60,34 @@ export const aboutMeList = [
   }, */,
   {
     title: 'What is my background?',
-    content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
+    content: (
+      <>
+        <p>
+          Like most designers who were around during the wild west of the early
+          internet, I first became interested in web design when I pirated
+          Photoshop on my familys' big boxy home computer. From there, I started
+          out in freelancing, splitting my time between both frontend
+          development and Ui design.
+        </p>
+
+        <p>
+          Since then I have traveled the world picking up odd digital design and
+          development work for NGOs that share my values and passions, worked in
+          big organisations back home in Sweden as both a service designer and a
+          UX designer, and also once as a product designer for an early stage
+          start-up where I was wearing all the hats imaginable.
+        </p>
+
+        <br />
+
+        <p>
+          I've also studied software engineering and product management at
+          Gothenburg University, and while I don't code professionally anymore,
+          it has definitely helped me to understand the technical feasibility of
+          my designs so that I can offer a more holistic approach to problem
+          solving.
+        </p>
+      </>
+    ),
   },
 ]
