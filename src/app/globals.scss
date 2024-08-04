@@ -11,7 +11,15 @@
     @apply bg-primary-200 text-primary-700;
   }
 
-  p {
+  li {
+    @apply list-disc list-inside;
+  }
+
+  p,
+  a,
+  q,
+  cite,
+  li {
     @apply tracking-wide leading-normal font-light;
   }
 
@@ -58,5 +66,9 @@
 @layer utilities {
   .text-muted {
     @apply text-gray-500;
+  }
+
+  .text-emphasis {
+    @apply underline decoration-primary-500;
   }
 }

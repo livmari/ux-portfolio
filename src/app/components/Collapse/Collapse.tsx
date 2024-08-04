@@ -7,7 +7,7 @@ import styles from './Collapse.module.scss'
 
 type CollapseProps = {
   title: string
-  content: string
+  content: string | React.ReactNode
   collapsed?: boolean
 }
 

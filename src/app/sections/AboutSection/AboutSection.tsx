@@ -1,4 +1,4 @@
-import { aboutMeList } from '@/lib/meta'
+import { aboutMeList } from '@/lib/about'
 import { Accordion } from '@/components'
 
 import styles from './AboutSection.module.scss'
