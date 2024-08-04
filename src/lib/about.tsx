@@ -49,7 +49,7 @@ export const aboutMeList = [
         <p>
           I'm also data informed rather than data driven, meaning that I use
           data as one of several inputs in the decision making process, balanced
-          it with other factors such as experience, intuition and context.
+          with other factors such as experience, intuition and context.
         </p>
       </>
     ),
