@@ -1,12 +1,14 @@
-import { Accordion } from '@/app/components'
-import { aboutAccordionData } from '@/lib/about'
+import { aboutMeList } from '@/lib/meta'
+import { Accordion } from '@/components'
+
+import styles from './AboutSection.module.scss'
 
 const AboutSection: React.FC = () => {
   return (
-    <section className={'section-layout'}>
-      <h2 className={'heading-2'}>About me</h2>
+    <section className={`layout-section p-section ${styles.frame}`}>
+      <h3>About me</h3>
 
-      <Accordion sections={aboutAccordionData} />
+      <Accordion sections={aboutMeList} />
     </section>
   )
 }

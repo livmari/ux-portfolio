@@ -4,73 +4,54 @@
 
 @layer base {
   body {
-    @apply /* layout */
-    px-6 sm:px-12
-    /* typography */
-    text-gray-700 antialiased
-    /* background */
-    bg-gray-50;
+    @apply subpixel-antialiased bg-gray-50 text-gray-700;
   }
 
-  small {
-    @apply text-gray-600;
+  ::selection {
+    @apply bg-primary-200 text-primary-700;
+  }
+
+  p,
+  a,
+  li,
+  ul,
+  ol {
+    @apply tracking-wide leading-relaxed font-extralight;
+  }
+
+  a {
+    @apply underline underline-offset-4 decoration-primary-500 decoration-1 hover:text-primary-600;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold leading-relaxed;
+  }
+
+  h1 {
+    @apply text-5xl sm:text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
   }
 }
 
 @layer components {
-  .page-layout {
-    @apply /* sizing */
-    container mx-auto w-full max-w-screen-lg
-    /* layout */
-    grid grid-cols-1 gap-40;
+  .layout-page {
+    @apply grid gap-48;
   }
 
-  .section-layout {
-    @apply grid gap-6;
-  }
-}
-
-@layer utilities {
-  /*h headings */
-  .heading-1,
-  .heading-2,
-  .heading-3,
-  .heading-4 {
-    @apply font-medium leading-loose;
+  .layout-section {
+    @apply mx-auto container max-w-screen-lg grid;
   }
 
-  .heading-1 {
-    @apply /* sizing */
-    text-4xl sm:text-5xl md:text-6xl lg:text-4xl;
-  }
-
-  .heading-2 {
-    @apply /* sizing */
-    text-3xl sm:text-4xl lg:text-3xl
-    /* decoration */
-    /* underline decoration-primary-400 decoration-4 underline-offset-8 */;
-  }
-
-  .heading-3 {
-    @apply /* sizing */
-    text-xl;
-  }
-
-  .heading-4 {
-    @apply /* sizing */
-    text-lg;
-  }
-
-  .callout {
-    @apply tracking-wide text-primary-600 font-medium;
-  }
-
-  /* layout */
-  .page-py {
-    @apply pt-6 pb-8;
-  }
-
-  .page-py-lg {
-    @apply pt-40 pb-48;
+  .p-section {
+    @apply px-6 sm:px-8 lg:px-0;
   }
 }

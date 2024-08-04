@@ -1,26 +1,30 @@
 import styles from './Button.module.scss'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label?: string
-  leftIcon?: React.ReactNode
-  rightIcon?: React.ReactNode
-  className?: string
+  icon?: React.ReactNode
+  iconPosition?: 'left' | 'right'
+  label: string
+  variant?: 'inline'
 }
 
 const Button: React.FC<ButtonProps> = ({
-  leftIcon,
-  rightIcon,
+  icon,
+  iconPosition = 'left',
   label,
-  className = '',
+  variant,
   ...props
 }) => {
   return (
-    <button className={`${styles.frame} ${className}`} {...props}>
-      {leftIcon && <span>{leftIcon}</span>}
+    <button className={styles.frame} {...props}>
+      {icon && iconPosition === 'left' ? (
+        <span className={styles.iconFrame}>{icon}</span>
+      ) : null}
 
-      {label && <span className={styles.label}>{label}</span>}
+      <span className={styles.label}>{label}</span>
 
-      {rightIcon && <span>{rightIcon}</span>}
+      {icon && iconPosition === 'right' ? (
+        <span className={styles.iconFrame}>{icon}</span>
+      ) : null}
     </button>
   )
 }

@@ -1,20 +1,13 @@
-import {
-  AboutSection,
-  ContactSection,
-  HeroSection,
-  ProjectsSection,
-} from './sections'
+import { AboutSection, HeroSection, ProjectsSection } from './sections'
 
 const Home = () => {
   return (
-    <main className={'page-layout page-py-lg'}>
+    <main className={`layout-page my-32`}>
       <HeroSection />
 
       <ProjectsSection />
 
       <AboutSection />
-
-      <ContactSection />
     </main>
   )
 }

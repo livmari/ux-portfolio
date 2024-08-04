@@ -8,22 +8,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.zinc,
-      primary: colors.violet,
-    },
     extend: {
-      screens: {
-        xs: '400px',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-        '5xl': '2.5rem',
-        '6xl': '3rem',
+      colors: {
+        gray: colors.zinc,
+        primary: colors.indigo,
       },
     },
   },

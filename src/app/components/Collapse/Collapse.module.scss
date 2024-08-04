@@ -1,0 +1,33 @@
+.frame {
+  @apply py-4 first:border-t border-b grid gap-2;
+
+  * {
+    @apply transition-all;
+  }
+}
+
+.frame.collapsed {
+  @apply gap-0;
+}
+
+.visibilityToggle {
+  @apply w-full text-left flex gap-4 justify-between items-center text-xl font-medium hover:text-primary-600;
+
+  svg {
+    @apply h-4 w-4 duration-500;
+  }
+}
+
+.visibilityToggle.collapsed {
+  svg {
+    @apply -rotate-45;
+  }
+}
+
+.content {
+  @apply pb-2 duration-300;
+}
+
+.content.collapsed {
+  @apply h-0 pb-0 opacity-0 pointer-events-none;
+}
