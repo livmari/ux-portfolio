@@ -4,7 +4,7 @@ import { Mulish } from 'next/font/google'
 import './globals.scss'
 import { PageHeader } from './components'
 
-const mulish = Mulish({ weight: '400', subsets: ['latin'] })
+const mulish = Mulish({ subsets: ['latin'] })
 
 const metadata: Metadata = {
   title: 'Create Next App',

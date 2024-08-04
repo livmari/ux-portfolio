@@ -1,0 +1,24 @@
+.frame {
+  @apply grid gap-4 p-6 rounded-md bg-white border border-gray-100;
+
+  q {
+    quotes: none;
+  }
+
+  q:before,
+  q:after {
+    content: '';
+  }
+
+  cite {
+    @apply not-italic;
+
+    .name {
+      @apply font-semibold;
+    }
+
+    .profession {
+      @apply text-sm text-gray-500;
+    }
+  }
+}
