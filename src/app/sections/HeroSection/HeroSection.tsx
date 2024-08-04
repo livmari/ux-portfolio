@@ -36,16 +36,6 @@ const HeroSection: React.FC = () => {
     (_, index) => colorStyles[index % colorStyles.length]
   )
 
-  /* const assignColor = (index: number) => {
-    let firstColor = colorStyles[0]
-
-    colorStyles.shift()
-
-    colorStyles.push(firstColor)
-
-    return firstColor
-  } */
-
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
       <h1 className={styles.heading}>
