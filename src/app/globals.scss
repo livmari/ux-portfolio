@@ -16,7 +16,7 @@
   li,
   ul,
   ol {
-    @apply tracking-wide leading-relaxed font-extralight;
+    @apply tracking-wide leading-relaxed;
   }
 
   a {
@@ -53,5 +53,11 @@
 
   .p-section {
     @apply px-6 sm:px-8 lg:px-0;
+  }
+}
+
+@layer utilities {
+  .text-muted {
+    @apply text-gray-500;
   }
 }
