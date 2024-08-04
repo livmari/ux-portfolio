@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid'
-import { useState } from 'React'
 
 import styles from './HeroSection.module.scss'
 
@@ -45,9 +44,7 @@ const HeroSection: React.FC = () => {
       <h1 className={styles.heading}>
         {firstLetters.map((letter, index) => (
           <span
-            className={`${letter !== ' ' ? styles.symbol : ''} ${
-              letter !== ' ' && assignColor(index)
-            }`}
+            className={letter !== ' ' ? assignColor(index) : ''}
             key={nanoid()}
           >
             {letter}
@@ -58,9 +55,7 @@ const HeroSection: React.FC = () => {
 
         {secondLetters.map((letter, index) => (
           <span
-            className={`${letter !== ' ' ? styles.symbol : ''} ${
-              letter !== ' ' && assignColor(index)
-            }`}
+            className={letter !== ' ' ? assignColor(index) : ''}
             key={nanoid()}
           >
             {letter}

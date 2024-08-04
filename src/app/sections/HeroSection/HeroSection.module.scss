@@ -4,58 +4,54 @@
   }
 }
 
-.symbol {
-  @apply hover:font-extrabold;
-}
-
-.symbol.red {
+.red {
   @apply hover:text-red-500;
 }
 
-.symbol.orange {
+.orange {
   @apply hover:text-orange-500;
 }
 
-.symbol.amber {
+.amber {
   @apply hover:text-amber-500;
 }
-.symbol.yellow {
+.yellow {
   @apply hover:text-yellow-500;
 }
-.symbol.lime {
+.lime {
   @apply hover:text-lime-500;
 }
-.symbol.green {
+.green {
   @apply hover:text-green-500;
 }
-.symbol.emerald {
+.emerald {
   @apply hover:text-emerald-500;
 }
-.symbol.teal {
+.teal {
   @apply hover:text-teal-500;
 }
-.symbol.cyan {
+.cyan {
   @apply hover:text-cyan-500;
 }
-.symbol.sky {
+.sky {
   @apply hover:text-sky-500;
 }
-.symbol.blue {
+.blue {
   @apply hover:text-blue-500;
 }
-.symbol.indigo {
+.indigo {
   @apply hover:text-indigo-500;
 }
-.symbol.violet {
+.violet {
   @apply hover:text-violet-500;
 }
-.symbol.purple {
+.purple {
   @apply hover:text-purple-500;
 }
-.symbol.fuchsia {
+.fuchsia {
   @apply hover:text-fuchsia-500;
 }
-.symbol.pink {
+.pink {
   @apply hover:text-pink-500;
 }
 
