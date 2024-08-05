@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
       </h1>
 
       <p className={styles.currentlyText}>
-        Currently: sr. UX designer at Volvo Cars
+        Currently: senior UX designer at Volvo Cars
       </p>
     </section>
   )
