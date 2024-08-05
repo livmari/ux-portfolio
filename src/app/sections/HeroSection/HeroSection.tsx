@@ -41,9 +41,7 @@ const HeroSection: React.FC = () => {
       <h1 className={styles.heading}>
         {firstLetters.map((symbol, index) => (
           <span
-            className={`${symbol !== ' ' ? styles.symbol : ''} ${
-              symbol !== ' ' ? firstRowColors[index] : ''
-            }`}
+            className={symbol !== ' ' ? firstRowColors[index] : ''}
             key={nanoid()}
           >
             {symbol}

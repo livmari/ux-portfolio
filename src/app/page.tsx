@@ -7,7 +7,7 @@ import {
 
 const Home = () => {
   return (
-    <main className={`layout-page mt-32 mb-40`}>
+    <main className={`layout-page`}>
       <HeroSection />
 
       <ProjectsSection />

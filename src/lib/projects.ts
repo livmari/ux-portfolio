@@ -5,6 +5,7 @@ type ProjectType = {
   bannerImage: { path: string; alt: string }
   published: boolean
   slug: string
+  descriptors: { label: string; value: string }[] | []
 }
 
 const projects: ProjectType[] = [
@@ -14,7 +15,15 @@ const projects: ProjectType[] = [
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
     published: true,
-    slug: 'project-title-1',
+    slug: 'streamlined-supply-chain-management',
+    descriptors: [
+      {
+        label: 'Areas',
+        value: 'Research, strategy & design',
+      },
+      { label: 'Company', value: 'Volvo Cars' },
+      { label: 'Role', value: 'UX designer' },
+    ],
   },
   {
     title: 'Issue tracking in accessible system health dashboard',
@@ -23,6 +32,7 @@ const projects: ProjectType[] = [
     bannerImage: { path: '', alt: '' },
     published: false,
     slug: 'project-title-2',
+    descriptors: [],
   },
   {
     title: 'Complex component and design system maintenance',
@@ -31,6 +41,7 @@ const projects: ProjectType[] = [
     bannerImage: { path: '', alt: '' },
     published: false,
     slug: 'project-title-3',
+    descriptors: [],
   },
 ]
 
