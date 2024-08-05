@@ -1,0 +1,71 @@
+.frame {
+  @apply grid gap-14;
+}
+
+.heading {
+  * {
+    @apply transition-all duration-200;
+  }
+}
+
+.red {
+  @apply hover:text-red-500;
+}
+
+.orange {
+  @apply hover:text-orange-500;
+}
+
+.amber {
+  @apply hover:text-amber-500;
+}
+.yellow {
+  @apply hover:text-yellow-500;
+}
+.lime {
+  @apply hover:text-lime-500;
+}
+.green {
+  @apply hover:text-green-500;
+}
+.emerald {
+  @apply hover:text-emerald-500;
+}
+.teal {
+  @apply hover:text-teal-500;
+}
+.cyan {
+  @apply hover:text-cyan-500;
+}
+.sky {
+  @apply hover:text-sky-500;
+}
+.blue {
+  @apply hover:text-blue-500;
+}
+.indigo {
+  @apply hover:text-indigo-500;
+}
+.violet {
+  @apply hover:text-violet-500;
+}
+.purple {
+  @apply hover:text-purple-500;
+}
+.fuchsia {
+  @apply hover:text-fuchsia-500;
+}
+.pink {
+  @apply hover:text-pink-500;
+}
+.rose {
+  @apply hover:text-rose-500;
+}
+
+.descriptors {
+  @apply flex flex-col gap-6 md:flex-row md:gap-12;
+}
+
+.image {
+  @apply h-fit w-full bg-gray-200 rounded-md object-cover;
+}

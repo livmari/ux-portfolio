@@ -1,0 +1,15 @@
+.frame {
+  @apply inline-flex gap-2;
+
+  label {
+    @apply text-gray-500;
+  }
+}
+
+.frame.col {
+  @apply flex-col;
+}
+
+.frame.row {
+  @apply flex-row items-center;
+}
