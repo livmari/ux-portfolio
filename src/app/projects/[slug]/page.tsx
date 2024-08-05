@@ -16,6 +16,10 @@ const Project = ({ params }: { params: { slug: string } }) => {
         descriptors={currentProject?.descriptors}
         bannerImage={currentProject?.bannerImage}
       />
+
+      <section>
+        <h2>Background</h2>
+      </section>
     </main>
   )
 }
