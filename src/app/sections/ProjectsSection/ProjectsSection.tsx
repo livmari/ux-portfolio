@@ -15,6 +15,9 @@ const ProjectsSection: React.FC = () => {
           slug={project.slug}
           bannerImage={project.bannerImage}
           key={nanoid()}
+          company={project.company}
+          duration={project.duration}
+          areas={project.areas}
         />
       ))}
     </section>

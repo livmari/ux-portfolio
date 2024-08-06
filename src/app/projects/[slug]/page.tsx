@@ -5,6 +5,7 @@ import { projects } from '@/lib/projects'
 
 const Project = ({ params }: { params: { slug: string } }) => {
   let currentProject
+  const project1 = params.slug === 'streamlined-supply-chain-management'
 
   for (let i = 0; i < projects.length; i++)
     if (projects[i].slug === params.slug) currentProject = projects[i]
@@ -17,8 +18,18 @@ const Project = ({ params }: { params: { slug: string } }) => {
         bannerImage={currentProject?.bannerImage}
       />
 
-      <section>
+      <section className={'layout-section p-section'}>
         <h2>Background</h2>
+      </section>
+      <section className={'layout-section p-section'}>
+        <h2>Process</h2>
+        {project1 && <img src={'/images/supply_chain-card_sorting.png'} />}
+      </section>
+      <section className={'layout-section p-section'}>
+        <h2>Results</h2>
+      </section>
+      <section className={'layout-section p-section'}>
+        <h2>Tools</h2>
       </section>
     </main>
   )

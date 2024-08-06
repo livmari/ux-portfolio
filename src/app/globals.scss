@@ -25,7 +25,7 @@
   }
 
   a {
-    @apply underline underline-offset-4 decoration-primary-500 decoration-1 hover:text-primary-600;
+    @apply underline underline-offset-4 decoration-primary-500 decoration-2 hover:text-primary-600 hover:decoration-wavy;
   }
 
   h1,
@@ -34,11 +34,11 @@
   h2 > span,
   h3,
   h3 > span {
-    @apply font-semibold tracking-normal;
+    @apply tracking-normal;
   }
 
   h1 {
-    @apply text-5xl sm:text-6xl;
+    @apply font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl;
   }
 
   h2 {
@@ -52,7 +52,7 @@
 
 @layer components {
   .layout-page {
-    @apply mt-28 mb-40 grid gap-48;
+    @apply mt-40 mb-40 grid gap-60;
   }
 
   .layout-section {

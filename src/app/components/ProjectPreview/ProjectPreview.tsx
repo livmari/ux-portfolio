@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 import styles from './ProjectPreview.module.scss'
 
@@ -7,7 +6,10 @@ interface ProjectPreviewProps {
   title: string
   published: boolean
   slug: string
+  company: string
+  duration: string
   bannerImage: { path: string; alt: string }
+  areas: string
 }
 
 const ProjectPreview: React.FC<ProjectPreviewProps> = ({
@@ -15,32 +17,70 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   published,
   slug,
   bannerImage,
+  company,
+  duration,
+  areas,
 }) => {
   return (
     <div className={styles.frame}>
-      <Image
-        src={bannerImage.path}
-        alt={bannerImage.alt}
-        height={200}
-        width={200}
-        className={styles.image}
-      />
+      <header className={styles.header}>
+        <div className={styles.info}>
+          <h3>{title}</h3>
 
-      <div className={styles.meta}>
-        <p className={styles.text}>Case study</p>
-
-        <h2 className={styles.title}>{title}</h2>
+          <p className={styles.meta}>
+            {areas} - {company}, {duration}
+          </p>
+        </div>
 
         {published ? (
-          <Link href={`/projects/${slug}`} className={styles.text}>
+          <Link href={`/projects/${slug}`} className={styles.link}>
             Read more
           </Link>
         ) : (
-          <p className={styles.text}>Coming soon</p>
+          <p className={styles.disabled}>Coming soon</p>
         )}
-      </div>
+      </header>
+      {bannerImage.path !== '' && (
+        <div className={styles.imageFrame}>
+          <img
+            src={bannerImage.path}
+            alt={bannerImage.alt}
+            className={styles.image}
+          />
+        </div>
+      )}
     </div>
   )
+  /* return (
+    <div className={styles.frame}>
+      <div className={styles.meta}>
+        <div className={styles.projectInfo}>
+          <h3>{title}</h3>
+          <p>
+            {areas} - <span>{company}</span>, <span>{duration}</span>
+          </p>
+        </div>
+
+        {published ? (
+          <Link href={`/projects/${slug}`} className={styles.link}>
+            Read more
+          </Link>
+        ) : (
+          <p className={styles.disabledText}>Coming soon</p>
+        )}
+      </div>
+
+      {bannerImage.path !== '' && (
+        <div className={styles.imageFrame}>
+          <img
+            src={bannerImage.path}
+            alt={bannerImage.alt}
+            className={styles.image}
+          />
+        </div>
+      )}
+    </div>
+  ) */
 }
 
 export default ProjectPreview

@@ -6,7 +6,7 @@ import styles from './AboutSection.module.scss'
 const AboutSection: React.FC = () => {
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
-      <h3>About me</h3>
+      <h2>About me</h2>
 
       <Accordion sections={aboutMeList} />
     </section>
