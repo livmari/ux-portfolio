@@ -23,7 +23,9 @@ const Home = () => {
 
       <TestimonialsSection />
 
-      <TextCircle />
+      <section className={'layout-section p-section grid justify-items-center'}>
+        <TextCircle />
+      </section>
     </main>
   )
 }
