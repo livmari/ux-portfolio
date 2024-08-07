@@ -1,3 +1,4 @@
+import { Divider } from './components'
 import {
   AboutSection,
   HeroSection,
@@ -9,6 +10,8 @@ const Home = () => {
   return (
     <main className={`layout-page`}>
       <HeroSection />
+
+      <Divider />
 
       <ProjectsSection />
 

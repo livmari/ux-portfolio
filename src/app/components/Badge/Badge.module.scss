@@ -1,0 +1,19 @@
+.frame {
+  @apply flex gap-2 items-center;
+}
+
+.illustration {
+  @apply relative h-2 w-2;
+}
+
+.ball,
+.pulse {
+  @apply absolute h-2 w-2 rounded-full bg-primary-400;
+}
+
+.pulse {
+  @apply animate-ping;
+}
+
+.text {
+}

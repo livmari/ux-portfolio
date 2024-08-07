@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply subpixel-antialiased bg-gray-50 text-gray-700;
+    @apply text-xl subpixel-antialiased bg-gray-50 text-gray-700;
   }
 
   ::selection {
@@ -20,8 +22,9 @@
   q,
   cite,
   li,
-  label {
-    @apply tracking-wide leading-normal font-light;
+  label,
+  button {
+    @apply font-sans tracking-wide leading-normal font-light;
   }
 
   a {
@@ -34,11 +37,11 @@
   h2 > span,
   h3,
   h3 > span {
-    @apply tracking-normal;
+    @apply font-serif tracking-normal;
   }
 
   h1 {
-    @apply font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl;
+    @apply font-serif text-5xl sm:text-6xl md:text-7xl;
   }
 
   h2 {
@@ -52,7 +55,7 @@
 
 @layer components {
   .layout-page {
-    @apply mt-40 mb-40 grid gap-60;
+    @apply my-40 grid gap-40;
   }
 
   .layout-section {
