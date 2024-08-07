@@ -1,5 +1,5 @@
 .frame {
-  @apply py-4 first:border-t border-b border-primary-200 border-dashed grid gap-2;
+  @apply py-4 first:border-t border-b border-primary-300 border-dashed grid gap-2;
 
   * {
     @apply transition-all;
@@ -29,5 +29,5 @@
 }
 
 .content.collapsed {
-  @apply h-0 pb-0 opacity-0 pointer-events-none;
+  @apply h-0 pt-0 pb-0 opacity-0 pointer-events-none;
 }

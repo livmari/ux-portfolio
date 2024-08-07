@@ -32,7 +32,7 @@ const config: Config = {
     extend: {
       colors: {
         gray: colors.zinc,
-        primary: colors.indigo,
+        primary: colors.emerald,
       },
     },
   },
