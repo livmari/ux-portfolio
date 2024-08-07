@@ -1,5 +1,5 @@
 .frame {
-  @apply py-4 first:border-t border-b grid gap-2;
+  @apply py-4 first:border-t border-b border-primary-200 border-dashed grid gap-2;
 
   * {
     @apply transition-all;
@@ -14,7 +14,7 @@
   @apply w-full text-left flex gap-4 justify-between items-center text-xl font-medium hover:text-primary-600;
 
   svg {
-    @apply h-4 w-4 duration-500;
+    @apply h-6 w-6 duration-500;
   }
 }
 
@@ -25,7 +25,7 @@
 }
 
 .content {
-  @apply pb-2 duration-300;
+  @apply pt-6 pb-8 duration-300;
 }
 
 .content.collapsed {

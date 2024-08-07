@@ -28,7 +28,7 @@ const Collapse: React.FC<CollapseProps> = ({
           showContent && styles.collapsed
         }`}
       >
-        {title}
+        <h2>{title}</h2>
 
         <XMarkIcon />
       </button>
