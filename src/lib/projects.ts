@@ -18,7 +18,7 @@ const projects: ProjectType[] = [
       path: '/images/supply_chain-work_item.svg',
       alt: '',
     },
-    published: true,
+    published: false,
     slug: 'streamlined-supply-chain-management',
     areas: 'Research, strategy & UX design',
     descriptors: [
@@ -31,10 +31,10 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    title: 'Issue tracking in accessible system health dashboard',
+    title: 'Transparent bug tracking',
     duration: '2024',
     company: 'Volvo Cars',
-    bannerImage: { path: '', alt: '' },
+    bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
     published: false,
     slug: 'project-title-2',
     areas: 'Ui design',
