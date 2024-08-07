@@ -6,6 +6,8 @@ import {
   TestimonialsSection,
 } from './sections'
 
+import { TextCircle } from '@/components/animations'
+
 const Home = () => {
   return (
     <main className={`layout-page`}>
@@ -20,6 +22,8 @@ const Home = () => {
       <AboutSection />
 
       <TestimonialsSection />
+
+      <TextCircle />
     </main>
   )
 }

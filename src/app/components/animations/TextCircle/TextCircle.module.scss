@@ -1,0 +1,30 @@
+.textCircle {
+  display: none;
+
+  @media only screen and (min-width: 1280px) {
+    display: block;
+  }
+
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  animation: spin 32s linear infinite;
+}
+
+.text {
+  @apply font-sans font-medium;
+  font-size: 12px;
+  word-spacing: 4px;
+  letter-spacing: 4.1px;
+  fill: #818cf8;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
