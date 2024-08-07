@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply text-xl subpixel-antialiased bg-gray-50 text-gray-700;
+    @apply text-xl subpixel-antialiased bg-gradient-to-t from-gray-100 to-gray-50 bg-cover bg-fixed text-gray-700;
   }
 
   ::selection {
@@ -23,20 +23,19 @@
   cite,
   li,
   label,
-  button {
+  button,
+  small {
     @apply font-sans tracking-wide leading-normal font-light;
   }
 
   a {
-    @apply underline underline-offset-4 decoration-primary-500 decoration-2 hover:text-primary-600 hover:decoration-wavy;
+    @apply underline underline-offset-4 decoration-primary-600 hover:decoration-primary-800 decoration-2 text-primary-600 hover:text-primary-800;
   }
 
   h1,
   h1 > span,
   h2,
-  h2 > span,
-  h3,
-  h3 > span {
+  h2 > span {
     @apply font-serif tracking-normal;
   }
 
@@ -46,10 +45,6 @@
 
   h2 {
     @apply text-4xl;
-  }
-
-  h3 {
-    @apply text-3xl;
   }
 }
 

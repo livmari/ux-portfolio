@@ -5,3 +5,11 @@
 .emphasis {
   @apply text-primary-500;
 }
+
+.footer {
+  @apply flex gap-2 items-center;
+
+  p {
+    @apply whitespace-nowrap;
+  }
+}

@@ -18,7 +18,7 @@ const projects: ProjectType[] = [
       path: '/images/supply_chain-work_item.svg',
       alt: '',
     },
-    published: false,
+    published: true,
     slug: 'streamlined-supply-chain-management',
     areas: 'Research, strategy & UX design',
     descriptors: [

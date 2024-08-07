@@ -24,14 +24,16 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   return (
     <div className={styles.frame}>
       <header className={styles.header}>
-        <div className={styles.info}>
-          <h3>{title}</h3>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.info}>
+          {areas}
+          <span className={'hidden lg:inline'}> -</span>
 
-          <p className={styles.meta}>
-            {areas} - {company}, {duration}
-          </p>
-        </div>
-
+          <span className={'block lg:inline'}>
+            {' '}
+            {company}, {duration}
+          </span>
+        </p>
         {published ? (
           <Link href={`/projects/${slug}`} className={styles.link}>
             Read more
@@ -40,6 +42,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
           <p className={styles.disabled}>Coming soon</p>
         )}
       </header>
+
       {bannerImage.path !== '' && (
         <div className={styles.imageFrame}>
           <img

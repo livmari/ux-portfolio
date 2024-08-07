@@ -1,32 +1,36 @@
 .frame {
+  * {
+    @apply transition-all duration-300;
+  }
+
   @apply w-full grid gap-8;
 
   .header {
-    @apply grid gap-2 md:gap-6 md:grid-cols-3;
+    @apply grid gap-2 sm:grid-cols-3;
+
+    .title {
+      @apply sm:col-span-3;
+    }
 
     .info {
-      @apply grid gap-1 md:col-span-2;
-
-      .meta {
-        @apply text-primary-500;
-      }
+      @apply sm:col-span-2;
     }
 
     .link,
     .disabled {
-      @apply text-lg sm:text-xl md:text-2xl md:justify-self-end;
+      @apply sm:justify-self-end sm:self-end;
     }
 
     .disabled {
-      @apply text-primary-500 italic;
+      @apply text-gray-500 italic;
     }
   }
 
   .imageFrame {
-    @apply w-full p-10 pt-8 sm:p-16 sm:pt-12 md:p-20 md:pt-16 bg-white rounded-2xl;
+    @apply w-full p-10 pt-8 sm:p-16 sm:pt-12 md:p-20 md:pt-16 bg-primary-50 rounded-md;
 
     .image {
-      @apply w-full border-8 sm:border-[16px] lg:border-[24px] border-gray-50 rounded-xl shadow-sm;
+      @apply w-full rounded shadow-sm shadow-primary-300/50;
     }
   }
 }

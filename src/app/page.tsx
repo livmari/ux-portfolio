@@ -13,11 +13,11 @@ const Home = () => {
     <main className={`layout-page`}>
       <HeroSection />
 
-      <Divider />
+      <Divider text={'Recent projects'} />
 
       <ProjectsSection />
 
-      <Divider />
+      <Divider text={'About me'} />
 
       <AboutSection />
 

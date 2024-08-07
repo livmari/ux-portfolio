@@ -1,6 +1,7 @@
 import { Badge } from '@/components'
 
 import styles from './HeroSection.module.scss'
+import { PulseBall } from '@/app/components/animations'
 
 const HeroSection: React.FC = () => {
   return (
@@ -10,7 +11,13 @@ const HeroSection: React.FC = () => {
         product designer
       </h1>
 
-      <Badge text={'Open to new opportunities - currently at Volvo Cars'} />
+      <footer className={styles.footer}>
+        <PulseBall />
+
+        <p>Open to new opportunities </p>
+
+        <p className={'hidden sm:inline'}>- currently at Volvo Cars</p>
+      </footer>
     </section>
   )
 }

@@ -11,7 +11,7 @@ const Blockquote: React.FC<BlockquoteType> = ({ quote, name, profession }) => {
         <br />
 
         {profession && (
-          <span className={`${styles.profession}`}>{profession}</span>
+          <small className={`${styles.profession}`}>{profession}</small>
         )}
       </cite>
 
