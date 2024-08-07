@@ -1,24 +1,11 @@
 .frame {
-  * {
-    @apply transition-all duration-300;
-  }
-
-  @apply w-full grid gap-8;
+  @apply grid gap-8 md:grid-cols-3 items-center /* relative w-full flex flex-col md:flex-row gap-8 items-center */;
 
   .header {
-    @apply grid gap-2 sm:grid-cols-3;
+    @apply flex flex-col gap-2;
 
     .title {
       @apply sm:col-span-3;
-    }
-
-    .info {
-      @apply sm:col-span-2;
-    }
-
-    .link,
-    .disabled {
-      @apply sm:justify-self-end sm:self-end;
     }
 
     .disabled {
@@ -27,6 +14,6 @@
   }
 
   .image {
-    @apply w-full rounded-md shadow-sm;
+    @apply md:col-span-2 rounded-md shadow-sm;
   }
 }
