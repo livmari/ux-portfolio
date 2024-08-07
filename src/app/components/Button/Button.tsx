@@ -4,18 +4,32 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode
   iconPosition?: 'left' | 'right'
   label: string
-  variant?: 'inline'
+  variant?: 'primary' | 'default'
+  className?: string
 }
 
 const Button: React.FC<ButtonProps> = ({
   icon,
   iconPosition = 'left',
   label,
-  variant,
+  variant = 'default',
+  className,
   ...props
 }) => {
+  const assignVariantStyle = () => {
+    switch (variant) {
+      case 'primary':
+        return styles.primary
+      default:
+        return styles.default
+    }
+  }
+
   return (
-    <button className={styles.frame} {...props}>
+    <button
+      className={`${styles.frame} ${className} ${assignVariantStyle()}`}
+      {...props}
+    >
       {icon && iconPosition === 'left' ? (
         <span className={styles.iconFrame}>{icon}</span>
       ) : null}

@@ -1,9 +1,13 @@
 .frame {
-  @apply inline-flex border bg-white justify-items-center items-center gap-1;
+  @apply px-4 py-2 inline-flex border justify-items-center items-center gap-2 rounded-full;
 }
 
 .iconFrame {
   svg {
     @apply h-4 w-4;
   }
+}
+
+.primary {
+  @apply bg-primary-500 text-white border-primary-500;
 }
