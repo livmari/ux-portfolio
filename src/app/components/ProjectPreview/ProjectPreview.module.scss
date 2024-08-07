@@ -26,11 +26,7 @@
     }
   }
 
-  .imageFrame {
-    @apply w-full p-10 pt-8 sm:p-16 sm:pt-12 md:p-20 md:pt-16 bg-primary-50 rounded-md;
-
-    .image {
-      @apply w-full rounded shadow-sm shadow-primary-300/50;
-    }
+  .image {
+    @apply w-full rounded-md shadow-sm;
   }
 }

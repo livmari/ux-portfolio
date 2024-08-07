@@ -44,13 +44,11 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
       </header>
 
       {bannerImage.path !== '' && (
-        <div className={styles.imageFrame}>
-          <img
-            src={bannerImage.path}
-            alt={bannerImage.alt}
-            className={styles.image}
-          />
-        </div>
+        <img
+          src={bannerImage.path}
+          alt={bannerImage.alt}
+          className={styles.image}
+        />
       )}
     </div>
   )
