@@ -27,9 +27,6 @@ jobs:
       - name: Build the project
         run: pnpm run build
 
-      - name: Export the static site
-        run: pnpm run export
-
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
