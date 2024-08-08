@@ -18,10 +18,8 @@ jobs:
         with:
           node-version: '16' # Specify the node version
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 8 # Specify the pnpm version
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
         run: pnpm install
