@@ -35,4 +35,12 @@ const Project = ({ params }: { params: { slug: string } }) => {
   )
 }
 
+// Define the generateStaticParams function
+export async function generateStaticParams() {
+  // Generate static params from your projects data
+  return projects.map(project => ({
+    slug: project.slug,
+  }))
+}
+
 export default Project
