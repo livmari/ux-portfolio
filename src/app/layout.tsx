@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
-import { Mulish } from 'next/font/google'
 
 import './globals.scss'
 import { PageHeader } from './components'
-
-const mulish = Mulish({ subsets: ['latin'] })
 
 const metadata: Metadata = {
   title: 'Liv Mari | UX design',
@@ -18,7 +15,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang={'en'}>
-      <body className={`${mulish.className}`}>
+      <body>
         <PageHeader />
 
         {children}

@@ -1,0 +1,19 @@
+.textCircle {
+  animation: spin 28s linear infinite;
+}
+
+.text {
+  @apply font-sans font-medium fill-primary-600;
+  font-size: 12px;
+  word-spacing: 4px;
+  letter-spacing: 4.1px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

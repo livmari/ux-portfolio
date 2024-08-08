@@ -1,84 +1,23 @@
-import { nanoid } from 'nanoid'
+import { Badge } from '@/components'
 
 import styles from './HeroSection.module.scss'
+import { PulseBall } from '@/app/components/animations'
 
 const HeroSection: React.FC = () => {
-  let colorStyles = [
-    styles.red,
-    styles.orange,
-    styles.amber,
-    styles.yellow,
-    styles.lime,
-    styles.green,
-    styles.emerald,
-    styles.teal,
-    styles.cyan,
-    styles.sky,
-    styles.blue,
-    styles.indigo,
-    styles.violet,
-    styles.purple,
-    styles.fuchsia,
-    styles.pink,
-    styles.rose,
-  ]
-
-  let firstRow = `Hi, I'm Liv Mari`
-  let secondRow = `I design thoughtful`
-  let thirdRow = `digital experiences`
-
-  let firstLetters = firstRow.split('')
-  let secondLetters = secondRow.split('')
-  let thirdLetters = thirdRow.split('')
-
-  const firstRowColors = firstLetters.map(
-    (_, index) => colorStyles[index % colorStyles.length]
-  )
-  const secondRowColors = secondLetters.map(
-    (_, index) => colorStyles[index % colorStyles.length]
-  )
-  const thirdRowColors = thirdLetters.map(
-    (_, index) => colorStyles[index % colorStyles.length]
-  )
-
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
       <h1 className={styles.heading}>
-        {firstLetters.map((symbol, index) => (
-          <span
-            className={symbol !== ' ' ? firstRowColors[index] : ''}
-            key={nanoid()}
-          >
-            {symbol}
-          </span>
-        ))}
-
-        <br />
-
-        {secondLetters.map((symbol, index) => (
-          <span
-            className={symbol !== ' ' ? secondRowColors[index] : ''}
-            key={nanoid()}
-          >
-            {symbol}
-          </span>
-        ))}
-
-        <br />
-
-        {thirdLetters.map((symbol, index) => (
-          <span
-            className={symbol !== ' ' ? thirdRowColors[index] : ''}
-            key={nanoid()}
-          >
-            {symbol}
-          </span>
-        ))}
+        I'm Liv Mari, a <span className={styles.emphasis}>human-centred</span>{' '}
+        product designer
       </h1>
 
-      <p className={styles.currentlyText}>
-        Currently: senior UX designer at Volvo Cars
-      </p>
+      <footer className={styles.footer}>
+        <PulseBall />
+
+        <p>Open to new opportunities </p>
+
+        <p className={'hidden sm:inline'}>- currently at Volvo Cars</p>
+      </footer>
     </section>
   )
 }

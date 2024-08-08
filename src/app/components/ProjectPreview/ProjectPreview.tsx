@@ -23,14 +23,18 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 }) => {
   return (
     <div className={styles.frame}>
-      <header className={styles.header}>
-        <div className={styles.info}>
-          <h3>{title}</h3>
+      {bannerImage.path !== '' && (
+        <img
+          src={bannerImage.path}
+          alt={bannerImage.alt}
+          className={styles.image}
+        />
+      )}
 
-          <p className={styles.meta}>
-            {areas} - {company}, {duration}
-          </p>
-        </div>
+      <div className={styles.header}>
+        <p className={styles.info}>Case study</p>
+
+        <h2 className={styles.title}>{title}</h2>
 
         {published ? (
           <Link href={`/projects/${slug}`} className={styles.link}>
@@ -39,48 +43,9 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
         ) : (
           <p className={styles.disabled}>Coming soon</p>
         )}
-      </header>
-      {bannerImage.path !== '' && (
-        <div className={styles.imageFrame}>
-          <img
-            src={bannerImage.path}
-            alt={bannerImage.alt}
-            className={styles.image}
-          />
-        </div>
-      )}
+      </div>
     </div>
   )
-  /* return (
-    <div className={styles.frame}>
-      <div className={styles.meta}>
-        <div className={styles.projectInfo}>
-          <h3>{title}</h3>
-          <p>
-            {areas} - <span>{company}</span>, <span>{duration}</span>
-          </p>
-        </div>
-
-        {published ? (
-          <Link href={`/projects/${slug}`} className={styles.link}>
-            Read more
-          </Link>
-        ) : (
-          <p className={styles.disabledText}>Coming soon</p>
-        )}
-      </div>
-
-      {bannerImage.path !== '' && (
-        <div className={styles.imageFrame}>
-          <img
-            src={bannerImage.path}
-            alt={bannerImage.alt}
-            className={styles.image}
-          />
-        </div>
-      )}
-    </div>
-  ) */
 }
 
 export default ProjectPreview

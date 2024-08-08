@@ -12,8 +12,8 @@ import styles from './TestimonialsSection.module.scss'
 const TestimonialsSection: React.FC = () => {
   const isSmallestViewport = useMediaQuery({ maxWidth: SCREEN_SM - 1 })
   const isSmallViewport = useMediaQuery({
-    minWidth: SCREEN_SM,
-    maxWidth: SCREEN_LG - 1,
+    minWidth: SCREEN_SM /* ,
+    maxWidth: SCREEN_LG - 1, */,
   })
   const isLargeViewport = useMediaQuery({ minWidth: SCREEN_LG })
 
@@ -24,7 +24,7 @@ const TestimonialsSection: React.FC = () => {
   const firstSmallViewportTestimonialsList = testimonials.slice(0, middle)
   const secondSmallViewportTestimonialsList = testimonials.slice(middle)
 
-  // Testimonials array split three ways
+  /*  // Testimonials array split three ways
   const largeViewportTestimonialsListSize = Math.floor(testimonialsLength / 3)
   const remainder = testimonialsLength % 3
 
@@ -40,7 +40,7 @@ const TestimonialsSection: React.FC = () => {
       testimonials.slice(startIndex, endIndex)
     )
     startIndex = endIndex
-  }
+  } */
 
   return (
     <section className={`p-section layout-section`}>
@@ -86,7 +86,7 @@ const TestimonialsSection: React.FC = () => {
         </div>
       )}
 
-      {isLargeViewport && (
+      {/* {isLargeViewport && (
         <div className={styles.mosaic}>
           {largeViewportTestimonialsLists.map(testimonialList => (
             <div className={styles.col} key={nanoid()}>
@@ -100,7 +100,7 @@ const TestimonialsSection: React.FC = () => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </section>
   )
 }

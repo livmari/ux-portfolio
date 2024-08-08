@@ -20,6 +20,10 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/components": ["./src/app/components/index"],
+      "@/components/animations": ["./src/app/components/animations/index"],
+      "@/components/illustrations": [
+        "./src/app/components/illustrations/index"
+      ],
       "@/lib/*": ["./src/lib/*"],
       "@/projects/components": ["./src/app/projects/[slug]/components/index"]
     }

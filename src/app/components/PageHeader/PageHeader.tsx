@@ -7,11 +7,13 @@ import {
   DocumentDuplicateIcon,
   ArrowUturnLeftIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 import { myEmail } from '@/lib/meta'
+import { Button } from '@/components'
 
 import styles from './PageHeader.module.scss'
-import Link from 'next/link'
+import { SparkleToSnowflake } from '@/components/animations'
 
 const PageHeader: React.FC = () => {
   const pathname = usePathname()
@@ -42,61 +44,24 @@ const PageHeader: React.FC = () => {
 
   return (
     <header className={`p-section ${styles.frame}`}>
-      {pathname === '/' ? (
-        <div className={styles.externalLinksFrame}>
-          <button
-            className={styles.button}
-            onClick={() =>
-              window.open(
-                'https://www.linkedin.com/in/livmari/',
-                '_blank',
-                'noopener,noreferrer'
-              )
-            }
-          >
-            LinkedIn
-          </button>
+      <SparkleToSnowflake />
 
-          <button
-            className={styles.button}
-            onClick={() =>
-              window.open(
-                'https://dribbble.com/livmari',
-                '_blank',
-                'noopener,noreferrer'
-              )
-            }
-          >
-            Dribbble
-          </button>
+      {/* <Button
+        className={styles.button}
+        onClick={() => copyEmailToClipboard()}
+        label={emailCopied ? 'Copied!' : ' Copy email'}
+        icon={
+          emailCopied ? (
+            <CheckIcon className={styles.icon} />
+          ) : (
+            <DocumentDuplicateIcon className={styles.icon} />
+          )
+        }
+        iconPosition={'right'}
+        variant={'primary'}
+      /> */}
 
-          <button
-            className={styles.button}
-            onClick={() =>
-              window.open(
-                'https://www.figma.com/@livmari',
-                '_blank',
-                'noopener,noreferrer'
-              )
-            }
-          >
-            Figma
-          </button>
-
-          <button
-            className={styles.button}
-            onClick={() => copyEmailToClipboard()}
-          >
-            {emailCopied ? 'Copied!' : 'Email'}
-
-            {emailCopied ? (
-              <CheckIcon className={styles.icon} />
-            ) : (
-              <DocumentDuplicateIcon className={styles.icon} />
-            )}
-          </button>
-        </div>
-      ) : (
+      {pathname !== '/' && (
         <Link href={'/'} className={styles.homeLink}>
           Go back <ArrowUturnLeftIcon />
         </Link>

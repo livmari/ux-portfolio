@@ -1,0 +1,18 @@
+.frame,
+.pulse,
+.ball {
+  @apply h-2 w-2;
+}
+
+.frame {
+  @apply relative;
+}
+
+.pulse,
+.ball {
+  @apply absolute rounded-full bg-primary-400;
+}
+
+.pulse {
+  @apply animate-ping;
+}
