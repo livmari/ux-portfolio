@@ -1,5 +1,3 @@
-'use client'
-
 import { HeroSection } from './sections'
 import { projects } from '@/lib/projects'
 
