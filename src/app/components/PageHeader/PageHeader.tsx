@@ -3,17 +3,17 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import {
+  ArrowUturnLeftIcon,
   CheckIcon,
   DocumentDuplicateIcon,
-  ArrowUturnLeftIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 import { myEmail } from '@/lib/meta'
 import { Button } from '@/components'
+import { SparkleToSnowflake } from '@/components/animations'
 
 import styles from './PageHeader.module.scss'
-import { SparkleToSnowflake } from '@/components/animations'
 
 const PageHeader: React.FC = () => {
   const pathname = usePathname()
@@ -44,28 +44,17 @@ const PageHeader: React.FC = () => {
 
   return (
     <header className={`p-section ${styles.frame}`}>
-      <SparkleToSnowflake />
+      <Link href={'/'} className={styles.homeLink}>
+        <SparkleToSnowflake />
+      </Link>
 
-      {/* <Button
-        className={styles.button}
-        onClick={() => copyEmailToClipboard()}
-        label={emailCopied ? 'Copied!' : ' Copy email'}
-        icon={
-          emailCopied ? (
-            <CheckIcon className={styles.icon} />
-          ) : (
-            <DocumentDuplicateIcon className={styles.icon} />
-          )
-        }
+      <Button
+        label={emailCopied ? 'Copied!' : 'Copy email'}
+        variant={'link'}
         iconPosition={'right'}
-        variant={'primary'}
-      /> */}
-
-      {pathname !== '/' && (
-        <Link href={'/'} className={styles.homeLink}>
-          Go back <ArrowUturnLeftIcon />
-        </Link>
-      )}
+        icon={emailCopied ? <CheckIcon /> : <DocumentDuplicateIcon />}
+        onClick={() => copyEmailToClipboard()}
+      />
     </header>
   )
 }

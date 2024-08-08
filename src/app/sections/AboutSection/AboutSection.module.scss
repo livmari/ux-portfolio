@@ -1,3 +1,7 @@
 .frame {
   @apply grid gap-6;
 }
+
+.profilePhoto {
+  @apply mx-auto md:mx-0 mb-10 h-56 sm:h-96 w-full object-cover rounded-t-[240px] rounded-b-[16px];
+}

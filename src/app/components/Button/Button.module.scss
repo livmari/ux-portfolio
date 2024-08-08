@@ -1,5 +1,5 @@
 .frame {
-  @apply px-4 py-2 inline-flex border justify-items-center items-center gap-2 rounded-full;
+  @apply text-base px-4 py-2 inline-flex border justify-items-center items-center gap-2 rounded-full;
 }
 
 .iconFrame {
@@ -10,4 +10,8 @@
 
 .primary {
   @apply bg-primary-500 text-white border-primary-500;
+}
+
+.link {
+  @apply bg-white border-white text-primary-600;
 }

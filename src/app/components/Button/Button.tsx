@@ -4,7 +4,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode
   iconPosition?: 'left' | 'right'
   label: string
-  variant?: 'primary' | 'default'
+  variant?: 'primary' | 'default' | 'link'
   className?: string
 }
 
@@ -20,6 +20,8 @@ const Button: React.FC<ButtonProps> = ({
     switch (variant) {
       case 'primary':
         return styles.primary
+      case 'link':
+        return styles.link
       default:
         return styles.default
     }
