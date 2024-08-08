@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  scripts: {
-    build: 'next build',
-    export: 'next export',
-  },
+  target: 'static',
 }
 
 export default nextConfig
