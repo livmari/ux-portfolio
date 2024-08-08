@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  target: 'static',
-}
+const nextConfig = {}
 
 export default nextConfig
