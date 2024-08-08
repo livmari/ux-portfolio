@@ -1,13 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import {
-  ArrowUturnLeftIcon,
-  CheckIcon,
-  DocumentDuplicateIcon,
-} from '@heroicons/react/24/outline'
-import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
+import { CheckIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline'
 
 import { myEmail } from '@/lib/meta'
 import { Button } from '@/components'
@@ -17,6 +12,7 @@ import styles from './PageHeader.module.scss'
 
 const PageHeader: React.FC = () => {
   const pathname = usePathname()
+  const router = useRouter()
 
   const [emailCopied, setEmailCopied] = useState<boolean>(false)
 
@@ -44,9 +40,15 @@ const PageHeader: React.FC = () => {
 
   return (
     <header className={`p-section ${styles.frame}`}>
-      <Link href={'/'} className={styles.homeLink}>
+      <button
+        onClick={() => {
+          if (pathname !== '/') return router.push('/')
+          else window.scrollTo({ top: 0, behavior: 'smooth' })
+        }}
+        className={styles.homeLink}
+      >
         <SparkleToSnowflake />
-      </Link>
+      </button>
 
       <Button
         label={emailCopied ? 'Copied!' : 'Copy email'}
