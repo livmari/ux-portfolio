@@ -11,6 +11,16 @@ type ProjectType = {
 
 const projects: ProjectType[] = [
   {
+    title: 'Transparent bug tracking',
+    duration: '2024',
+    company: 'Volvo Cars',
+    bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
+    published: false,
+    slug: 'project-title-2',
+    areas: 'Ui design',
+    descriptors: [],
+  },
+  {
     title: 'Streamlined supply chain management',
     duration: '2024',
     company: 'Volvo Cars',
@@ -29,16 +39,6 @@ const projects: ProjectType[] = [
       { label: 'Company', value: 'Volvo Cars' },
       { label: 'Role', value: 'Lead UX designer' },
     ],
-  },
-  {
-    title: 'Transparent bug tracking',
-    duration: '2024',
-    company: 'Volvo Cars',
-    bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
-    published: false,
-    slug: 'project-title-2',
-    areas: 'Ui design',
-    descriptors: [],
   },
   {
     title: 'Complex component and design system maintenance',
