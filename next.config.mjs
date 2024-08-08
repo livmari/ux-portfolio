@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  scripts: {
+    build: 'next build',
+    export: 'next export',
+  },
+}
 
-export default nextConfig;
+export default nextConfig
