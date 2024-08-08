@@ -4,8 +4,8 @@ export const aboutMeList = [
     content: (
       <>
         <p>
-          As a UX (User Experience) designer, I'm responsible for advocating for
-          the users of an information system by designing meaningful and
+          As a UX (User Experience) designer, my responsibility is to advocate
+          for the users of an information system by designing meaningful and
           relevant experiences that both meet business goals and iteratively
           improve the usability, functionality, and satisfaction of the product.
         </p>
@@ -13,9 +13,9 @@ export const aboutMeList = [
         <br />
 
         <p>
-          I usually work as a "UX generalist", which means that I float in
-          between research and visual design, grabbing the tools needed in the
-          given moment, based on the context and my previous experience.
+          I'm also responsible for driving UX maturity and user centred
+          development through continuous collaboration and mentoring within my
+          organisation.
         </p>
       </>
     ),
@@ -24,9 +24,7 @@ export const aboutMeList = [
     title: 'What are my values?',
     content: (
       <>
-        <p>
-          My core values in my everyday work-life are empathy and transparency.
-        </p>
+        <p>My core values are empathy and transparency.</p>
 
         <ul>
           <li>
@@ -53,11 +51,7 @@ export const aboutMeList = [
         </p>
       </>
     ),
-  } /* 
-  {
-    title: 'How do I work?',
-    content: 'Bla bla bla bla bla bla bla bla bla bla bla bla bla.',
-  }, */,
+  },
   {
     title: 'What is my background?',
     content: (
@@ -66,26 +60,27 @@ export const aboutMeList = [
           Like most designers who were around during the wild west of the early
           internet, I first became interested in web design when I pirated
           Photoshop on my familys' big boxy home computer. From there, I started
-          out in freelancing, splitting my time between both frontend
-          development and Ui design.
+          freelancing in web development and Ui design.
         </p>
 
         <p>
-          Since then I have traveled the world picking up odd digital design and
-          development work for NGOs that share my values and passions, worked in
-          big organisations back home in Sweden as both a service designer and a
-          UX designer, and also once as a product designer for an early stage
-          start-up where I was wearing all the hats imaginable.
+          After traveling around the world and working from my computer during
+          my early twenties, I decided to deepen my understanding of IT by
+          studying software engineering and product management at University of
+          Gothenburg.
+        </p>
+
+        <p>
+          I've since worked with UX under many different titles - service
+          designer, product designer, and UX designer, for big corporations as
+          well as start-ups.
         </p>
 
         <br />
 
         <p>
-          I've also studied software engineering and product management at
-          Gothenburg University, and while I don't code professionally anymore,
-          it has definitely helped me to understand the technical feasibility of
-          my designs so that I can offer a more holistic approach to problem
-          solving.
+          Today I work as a UX generalist, from early stage user research to
+          high fidelity design deliveries.
         </p>
       </>
     ),
