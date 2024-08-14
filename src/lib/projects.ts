@@ -15,7 +15,7 @@ const projects: ProjectType[] = [
     duration: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
-    published: true,
+    published: false,
     slug: 'project-title-2',
     areas: 'Ui design',
     descriptors: [],

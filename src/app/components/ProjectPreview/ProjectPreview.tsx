@@ -1,15 +1,17 @@
 import Link from 'next/link'
+import { PhotoIcon } from '@heroicons/react/24/outline'
+
+import { ProjectImagePlaceholder } from '@/components'
 
 import styles from './ProjectPreview.module.scss'
+import { VolvoWordmark } from '../illustrations'
 
 interface ProjectPreviewProps {
   title: string
   published: boolean
   slug: string
   company: string
-  duration: string
   bannerImage: { path: string; alt: string }
-  areas: string
 }
 
 const ProjectPreview: React.FC<ProjectPreviewProps> = ({
@@ -18,16 +20,19 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   slug,
   bannerImage,
   company,
-  duration,
-  areas,
 }) => {
   return (
     <div className={styles.frame}>
-      {bannerImage.path !== '' && (
+      {bannerImage.path !== '' ? (
         <img
           src={bannerImage.path}
           alt={bannerImage.alt}
           className={styles.image}
+        />
+      ) : (
+        <ProjectImagePlaceholder
+          className={styles.image}
+          logo={company === 'Volvo Cars' ? <VolvoWordmark /> : <PhotoIcon />}
         />
       )}
 
