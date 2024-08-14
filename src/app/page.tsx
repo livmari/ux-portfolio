@@ -3,7 +3,7 @@ import {
   AboutSection,
   HeroSection,
   ProjectsSection,
-  TestimonialsSection,
+  /* TestimonialsSection, */
 } from './sections'
 
 import { TextCircle } from '@/components/animations'
@@ -21,7 +21,7 @@ const Home = () => {
 
       <AboutSection />
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       <section className={'layout-section p-section grid justify-items-center'}>
         <TextCircle />
