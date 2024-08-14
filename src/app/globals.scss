@@ -50,7 +50,7 @@
 
 @layer components {
   .layout-page {
-    @apply my-48 grid gap-48;
+    @apply my-20 sm:my-48 grid gap-20 sm:gap-48;
   }
 
   .layout-section {
