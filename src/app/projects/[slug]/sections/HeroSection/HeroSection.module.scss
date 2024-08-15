@@ -1,5 +1,5 @@
 .frame {
-  @apply grid gap-14;
+  @apply grid gap-10;
 }
 
 .descriptors {
@@ -7,5 +7,5 @@
 }
 
 .image {
-  @apply h-fit w-full bg-gray-200 rounded-md object-cover;
+  @apply h-fit w-full rounded-lg object-cover border shadow-sm;
 }
