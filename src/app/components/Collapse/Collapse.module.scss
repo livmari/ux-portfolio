@@ -1,5 +1,5 @@
 .frame {
-  @apply py-4 first:border-t border-b border-primary-300 border-dashed grid gap-2;
+  @apply py-4 last:border-none border-b border-primary-300 border-dashed grid gap-2;
 
   * {
     @apply transition-all;
