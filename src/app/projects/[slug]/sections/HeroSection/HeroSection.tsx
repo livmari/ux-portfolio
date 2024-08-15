@@ -7,18 +7,22 @@ import Image from 'next/image'
 
 interface HeroSectionProps {
   title?: string
+  summary?: string
   descriptors?: { label: string; value: string }[] | []
   bannerImage?: { path: string; alt: string }
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   title = '',
+  summary = '',
   descriptors = [],
   bannerImage,
 }) => {
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
       <h1 className={styles.heading}>{title}</h1>
+
+      <p>{summary}</p>
 
       {descriptors?.length !== 0 ? (
         <div className={styles.descriptors}>

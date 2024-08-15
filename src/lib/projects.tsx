@@ -1,10 +1,12 @@
 import {
+  AntDesignLogo,
   FigmaLogo,
   NotionLogo,
 } from '@/app/projects/[slug]/components/illustrations'
 
 type ProjectType = {
   title: string
+  summary?: string
   duration: string
   company: string
   bannerImage: { path: string; alt: string }
@@ -19,6 +21,8 @@ type ProjectType = {
 const projects: ProjectType[] = [
   {
     title: 'Transparent bug tracking',
+    summary:
+      'Opening up for transparent communication about issue resolution across teams while encouraging gamification and a sense of success for developers',
     duration: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
@@ -32,16 +36,26 @@ const projects: ProjectType[] = [
     ],
     motivation: (
       <>
-        <p>My teams'</p>
+        <p>
+          This side-quest project came out of an internal team discussion where
+          management wanted better insights into issue resolution timelines. The
+          team found it tough to give accurate estimates because of factors like
+          bug complexity, severity, and delayed user responses. To help with
+          this, I designed a mock-up that aims to improve transparency between
+          teams, users, and management, while giving developers back a sense of
+          agency over the outcomes of their efforts.
+        </p>
       </>
     ),
     tools: [
       { illustration: <FigmaLogo />, link: 'https://www.figma.com/' },
       { illustration: <NotionLogo />, link: 'https://www.notion.so/' },
+      { illustration: <AntDesignLogo />, link: 'https://ant.design/' },
     ],
   },
   {
     title: 'Streamlined supply chain management',
+    summary: '',
     duration: '2024',
     company: 'Volvo Cars',
     bannerImage: {
@@ -62,6 +76,7 @@ const projects: ProjectType[] = [
   },
   {
     title: 'Component library and design system maintenance',
+    summary: '',
     duration: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
@@ -72,6 +87,7 @@ const projects: ProjectType[] = [
   },
   {
     title: 'Wholly Health',
+    summary: '',
     duration: '2024',
     company: 'Wholly Health',
     bannerImage: { path: '', alt: '' },

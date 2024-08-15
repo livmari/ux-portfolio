@@ -1,6 +1,8 @@
 import { MotivationSection, HeroSection, ToolsSection } from './sections'
 import { projects } from '@/lib/projects'
 
+import './styles.scss'
+
 const Project = ({ params }: { params: { slug: string } }) => {
   let currentProject
   const project1 = params.slug === 'streamlined-supply-chain-management'
@@ -12,6 +14,7 @@ const Project = ({ params }: { params: { slug: string } }) => {
     <main className={`layout-page`}>
       <HeroSection
         title={currentProject?.title}
+        summary={currentProject?.summary}
         descriptors={currentProject?.descriptors}
         bannerImage={currentProject?.bannerImage}
       />

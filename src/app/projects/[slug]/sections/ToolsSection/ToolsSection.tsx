@@ -11,7 +11,7 @@ interface ToolsSectionProps {
 const ToolsSection: React.FC<ToolsSectionProps> = ({ tools }) => {
   return (
     <section className={'layout-section p-section'}>
-      <h2 className={'mb-8'}>Tools</h2>
+      <h2>Tools</h2>
 
       {tools && (
         <div className={styles.toolsFrame}>
