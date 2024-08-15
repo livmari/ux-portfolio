@@ -7,6 +7,7 @@ type ProjectType = {
   slug: string
   descriptors: { label: string; value: string }[] | []
   areas: string
+  background?: React.ReactNode | string
 }
 
 const projects: ProjectType[] = [
@@ -23,6 +24,11 @@ const projects: ProjectType[] = [
       { label: 'Company', value: 'Volvo Cars' },
       { label: 'Role', value: 'UX designer' },
     ],
+    background: (
+      <>
+        <p>My teams'</p>
+      </>
+    ),
   },
   {
     title: 'Streamlined supply chain management',
