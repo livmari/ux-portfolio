@@ -12,7 +12,7 @@ type ProjectType = {
   slug: string
   descriptors: { label: string; value: string }[] | []
   areas: string
-  background?: React.ReactNode | string
+  motivation?: React.ReactNode | string
   tools?: { illustration: React.ReactNode; link?: string }[]
 }
 
@@ -30,7 +30,7 @@ const projects: ProjectType[] = [
       { label: 'Company', value: 'Volvo Cars' },
       { label: 'Role', value: 'UX designer' },
     ],
-    background: (
+    motivation: (
       <>
         <p>My teams'</p>
       </>

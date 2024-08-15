@@ -1,4 +1,4 @@
-import { BackgroundSection, HeroSection, ToolsSection } from './sections'
+import { MotivationSection, HeroSection, ToolsSection } from './sections'
 import { projects } from '@/lib/projects'
 
 const Project = ({ params }: { params: { slug: string } }) => {
@@ -16,10 +16,10 @@ const Project = ({ params }: { params: { slug: string } }) => {
         bannerImage={currentProject?.bannerImage}
       />
 
-      <BackgroundSection content={currentProject?.background} />
+      <MotivationSection content={currentProject?.motivation} />
 
       <section className={'layout-section p-section'}>
-        <h2>Process</h2>
+        <h2>Approach</h2>
         {project1 && <img src={'/images/supply_chain-card_sorting.png'} />}
       </section>
 
