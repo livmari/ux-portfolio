@@ -41,7 +41,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    title: 'Complex component and design system maintenance',
+    title: 'Component library and design system maintenance',
     duration: '2024',
     company: 'Volvo Cars',
     bannerImage: { path: '', alt: '' },
