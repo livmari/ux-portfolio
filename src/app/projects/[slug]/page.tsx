@@ -1,4 +1,4 @@
-import { BackgroundSection, HeroSection } from './sections'
+import { BackgroundSection, HeroSection, ToolsSection } from './sections'
 import { projects } from '@/lib/projects'
 
 const Project = ({ params }: { params: { slug: string } }) => {
@@ -24,12 +24,10 @@ const Project = ({ params }: { params: { slug: string } }) => {
       </section>
 
       <section className={'layout-section p-section'}>
-        <h2>Results</h2>
+        <h2>Conclusion</h2>
       </section>
 
-      <section className={'layout-section p-section'}>
-        <h2>Tools</h2>
-      </section>
+      <ToolsSection tools={currentProject?.tools} />
     </main>
   )
 }

@@ -1,3 +1,8 @@
+import {
+  FigmaLogo,
+  NotionLogo,
+} from '@/app/projects/[slug]/components/illustrations'
+
 type ProjectType = {
   title: string
   duration: string
@@ -8,6 +13,7 @@ type ProjectType = {
   descriptors: { label: string; value: string }[] | []
   areas: string
   background?: React.ReactNode | string
+  tools?: { illustration: React.ReactNode; link?: string }[]
 }
 
 const projects: ProjectType[] = [
@@ -29,6 +35,10 @@ const projects: ProjectType[] = [
         <p>My teams'</p>
       </>
     ),
+    tools: [
+      { illustration: <FigmaLogo />, link: 'https://www.figma.com/' },
+      { illustration: <NotionLogo />, link: 'https://www.notion.so/' },
+    ],
   },
   {
     title: 'Streamlined supply chain management',
