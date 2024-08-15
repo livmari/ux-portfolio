@@ -32,7 +32,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
       ) : (
         <ProjectImagePlaceholder
           className={styles.image}
-          logo={company === 'Volvo Cars' ? <VolvoWordmark /> : <PhotoIcon />}
+          logo={company === 'Volvo Cars' && <VolvoWordmark />}
         />
       )}
 
