@@ -23,7 +23,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {descriptors?.length !== 0 ? (
         <div className={styles.descriptors}>
           {descriptors.map(description => (
-            <Description label={description.label} value={description.value} />
+            <Description
+              label={description.label}
+              value={description.value}
+              key={nanoid()}
+            />
           ))}
         </div>
       ) : undefined}
