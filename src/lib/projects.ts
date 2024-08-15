@@ -16,9 +16,13 @@ const projects: ProjectType[] = [
     company: 'Volvo Cars',
     bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
     published: false,
-    slug: 'project-title-2',
+    slug: 'transparent-bug-tracking',
     areas: 'Ui design',
-    descriptors: [],
+    descriptors: [
+      { label: 'Areas', value: 'Design sprint, Ui design' },
+      { label: 'Company', value: 'Volvo Cars' },
+      { label: 'Role', value: 'UX designer' },
+    ],
   },
   {
     title: 'Streamlined supply chain management',
