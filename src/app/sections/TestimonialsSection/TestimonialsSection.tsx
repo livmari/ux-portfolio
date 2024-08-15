@@ -23,7 +23,7 @@ const TestimonialsSection: React.FC = () => {
   const secondSmallViewportTestimonialsList = testimonials.slice(middle)
 
   return (
-    <section className={`p-section layout-section`}>
+    <section className={`p-section layout-section`} id={'kind-words'}>
       {/* {isSmallestViewport && ( */}
       <div className={styles.mosaic}>
         {testimonials.map((testimonial: BlockquoteType) => (

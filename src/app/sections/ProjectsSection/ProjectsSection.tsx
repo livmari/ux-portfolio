@@ -7,7 +7,10 @@ import styles from './ProjectsSection.module.scss'
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className={`layout-section p-section ${styles.frame}`}>
+    <section
+      className={`layout-section p-section ${styles.frame}`}
+      id={'projects'}
+    >
       {projects.map(project => (
         <ProjectPreview
           title={project.title}
