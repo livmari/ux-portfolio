@@ -9,6 +9,11 @@ const testimonials = [
     name: 'Juha Kopare',
     profession: 'Product owner @ Volvo Cars',
   },
+  {
+    quote: `I have had the pleasure of working with Liv Mari, an exceptional UX designer at Koalitionen. Liv Mari consistently demonstrates a deep commitment to user-centered design, seamlessly integrating empathy and transparency into her work. Liv’s expertise spans from early-stage research to high-fidelity designs, making her an invaluable asset to any project. Her professionalism, attention to detail, and positive communication style set her apart as a leader in UX design. I highly recommend Liv for any challenging design role.`,
+    name: 'Amir Mofidi',
+    profession: 'CEO & founder @ Koalitionen',
+  },
 ]
 
 export { testimonials }

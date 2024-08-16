@@ -5,14 +5,14 @@ import { useMediaQuery } from 'react-responsive'
 
 import { Blockquote, type BlockquoteType } from '@/components'
 import { testimonials } from '@/lib/testimonials'
-import { SCREEN_SM, SCREEN_LG } from '@/lib/screens'
+import { SCREEN_LG } from '@/lib/screens'
 
 import styles from './TestimonialsSection.module.scss'
 
 const TestimonialsSection: React.FC = () => {
-  const isSmallestViewport = useMediaQuery({ maxWidth: SCREEN_SM - 1 })
-  const isSmallViewport = useMediaQuery({
-    minWidth: SCREEN_SM,
+  const isNotLargeViewport = useMediaQuery({ maxWidth: SCREEN_LG - 1 })
+  const isLargeViewport = useMediaQuery({
+    minWidth: SCREEN_LG,
   })
 
   const testimonialsLength = testimonials.length
@@ -24,20 +24,20 @@ const TestimonialsSection: React.FC = () => {
 
   return (
     <section className={`p-section layout-section`} id={'kind-words'}>
-      {/* {isSmallestViewport && ( */}
-      <div className={styles.mosaic}>
-        {testimonials.map((testimonial: BlockquoteType) => (
-          <Blockquote
-            quote={testimonial.quote}
-            name={testimonial.name}
-            profession={testimonial.profession}
-            key={nanoid()}
-          />
-        ))}
-      </div>
-      {/*  )} */}
-      {/* 
-      {isSmallViewport && (
+      {isNotLargeViewport && (
+        <div className={styles.mosaic}>
+          {testimonials.map((testimonial: BlockquoteType) => (
+            <Blockquote
+              quote={testimonial.quote}
+              name={testimonial.name}
+              profession={testimonial.profession}
+              key={nanoid()}
+            />
+          ))}
+        </div>
+      )}
+
+      {isLargeViewport && (
         <div className={styles.mosaic}>
           <div className={styles.col}>
             {firstSmallViewportTestimonialsList.map(
@@ -65,7 +65,7 @@ const TestimonialsSection: React.FC = () => {
             )}
           </div>
         </div>
-      )} */}
+      )}
     </section>
   )
 }
