@@ -15,12 +15,13 @@ type ProjectType = {
   descriptors: { label: string; value: string }[] | []
   areas: string
   motivation?: React.ReactNode | string
+  approach?: React.ReactNode | string
   tools?: { illustration: React.ReactNode; link?: string }[]
 }
 
 const projects: ProjectType[] = [
   {
-    title: 'Transparent bug tracking',
+    title: 'Gamified bug resolution',
     summary:
       'Opening up for transparent communication about issue resolution across teams while encouraging gamification and a sense of success for developers',
     duration: '2024',
@@ -35,16 +36,36 @@ const projects: ProjectType[] = [
       { label: 'Role', value: 'UX designer' },
     ],
     motivation: (
+      <p>
+        This smaller side-quest project came about through an internal
+        discussion in my team, where management requested insights on the
+        general turnover time for issue resolution. Since a combination of
+        factors, ranging from complexity and severity of the bugs, to delays in
+        user responses, made it difficult for the team to give a real
+        estimation, I decided to design a mock-up to increase the transparency
+        between teams, users, and management, as well as give the developers
+        back a sense of agency over the outcomes of their efforts.
+      </p>
+    ),
+    approach: (
       <>
-        <p>
-          This side-quest project came out of an internal team discussion where
-          management wanted better insights into issue resolution timelines. The
-          team found it tough to give accurate estimates because of factors like
-          bug complexity, severity, and delayed user responses. To help with
-          this, I designed a mock-up that aims to improve transparency between
-          teams, users, and management, while giving developers back a sense of
-          agency over the outcomes of their efforts.
-        </p>
+        <p></p>
+
+        <img
+          src={'/images/system_health-before.svg'}
+          alt={'Mock-up of what the legacy system looks like.'}
+        />
+
+        <img
+          src={'/images/system_health-user_map.svg'}
+          alt={'User and stakeholder map'}
+        />
+        />
+
+        <img
+          src={'/images/system_health-bug_history.svg'}
+          alt={'User and stakeholder map'}
+        />
       </>
     ),
     tools: [

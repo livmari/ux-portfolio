@@ -1,5 +1,3 @@
-import { Badge } from '@/components'
-
 import styles from './HeroSection.module.scss'
 import { PulseBall } from '@/app/components/animations'
 

@@ -2,6 +2,7 @@ import { MotivationSection, HeroSection, ToolsSection } from './sections'
 import { projects } from '@/lib/projects'
 
 import './styles.scss'
+import ApproachSection from './sections/ApproachSection/ApproachSection'
 
 const Project = ({ params }: { params: { slug: string } }) => {
   let currentProject
@@ -21,10 +22,7 @@ const Project = ({ params }: { params: { slug: string } }) => {
 
       <MotivationSection content={currentProject?.motivation} />
 
-      <section className={'layout-section p-section'}>
-        <h2>Approach</h2>
-        {project1 && <img src={'/images/supply_chain-card_sorting.png'} />}
-      </section>
+      <ApproachSection content={currentProject?.approach} />
 
       <section className={'layout-section p-section'}>
         <h2>Conclusion</h2>

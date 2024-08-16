@@ -1,9 +1,9 @@
 .frame {
-  @apply grid gap-14;
+  @apply grid gap-6 sm:gap-8;
 }
 
 .descriptors {
-  @apply flex flex-col gap-6 md:flex-row md:gap-12;
+  @apply flex flex-col gap-6 md:flex-row md:gap-12 mb-4;
 }
 
 .image {
