@@ -36,7 +36,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
         />
       )}
 
-      <div className={styles.header}>
+      <div className={styles.textFrame}>
         <p className={styles.info}>Case study</p>
 
         <h2 className={styles.title}>{title}</h2>

@@ -1,8 +1,8 @@
 .frame {
   @apply grid gap-8 md:grid-cols-3 items-center /* relative w-full flex flex-col md:flex-row gap-8 items-center */;
 
-  .header {
-    @apply flex flex-col gap-2;
+  .textFrame {
+    @apply flex flex-col gap-2 sm:gap-3;
 
     .title {
       @apply sm:col-span-3;

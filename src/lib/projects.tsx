@@ -60,7 +60,6 @@ const projects: ProjectType[] = [
           src={'/images/system_health-user_map.svg'}
           alt={'User and stakeholder map'}
         />
-        />
 
         <img
           src={'/images/system_health-bug_history.svg'}
