@@ -4,7 +4,7 @@ import './globals.scss'
 import { PageHeader } from './components'
 
 const metadata: Metadata = {
-  title: 'Liv Mari | UX design',
+  title: ' UX | Liv Mari',
   description: `A human-centred product designer`,
 }
 
