@@ -33,7 +33,7 @@ const HeroSection: React.FC = ({}) => {
       </div>
 
       <Image
-        src={'/images/system_health-banner.svg'}
+        src={'/images/system_health-bug_resolution_overview.svg'}
         alt={''}
         height={1600}
         width={1600}

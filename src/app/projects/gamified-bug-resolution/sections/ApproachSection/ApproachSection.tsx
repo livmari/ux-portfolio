@@ -173,7 +173,7 @@ const ApproachSection: React.FC = () => {
         community around improving the system together.
       </p>
 
-      <img src={'/images/system_health-banner.svg'} />
+      <img src={'/images/system_health-bug_resolution_overview.svg'} />
 
       <p>
         On a more utilitarian level, while not all users should have access to

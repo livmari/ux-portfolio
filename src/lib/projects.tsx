@@ -21,7 +21,10 @@ const projects: ProjectType[] = [
       'Opening up for transparent communication about issue resolution across teams while encouraging gamification and a sense of success for developers',
     duration: '2024',
     company: 'Volvo Cars',
-    bannerImage: { path: '/images/system_health-banner.svg', alt: '' },
+    bannerImage: {
+      path: '/images/system_health-bug_resolution_overview.svg',
+      alt: '',
+    },
     published: true,
     slug: 'gamified-bug-resolution',
   },
