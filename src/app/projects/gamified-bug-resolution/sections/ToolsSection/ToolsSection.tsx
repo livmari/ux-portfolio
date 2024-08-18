@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid'
 
-import { ToolCard } from '@/projects/components'
+import { ToolCard } from '@/components'
 
 import styles from './ToolsSection.module.scss'
 

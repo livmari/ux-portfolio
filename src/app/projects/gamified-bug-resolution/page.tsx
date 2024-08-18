@@ -1,8 +1,29 @@
-import { MotivationSection, HeroSection, ToolsSection } from './sections'
+import {
+  ApproachSection,
+  MotivationSection,
+  HeroSection,
+  ToolsSection,
+} from './sections'
+
+const Page = () => {
+  return (
+    <main className={`layout-page`}>
+      <HeroSection />
+    </main>
+  )
+}
+
+export default Page
+
+/* import {
+  ApproachSection,
+  MotivationSection,
+  HeroSection,
+  ToolsSection,
+} from '../gamified-bug-resolution/sections'
 import { projects } from '@/lib/projects'
 
-import './styles.scss'
-import ApproachSection from './sections/ApproachSection/ApproachSection'
+import styles from './Project.module.scss'
 
 const Project = ({ params }: { params: { slug: string } }) => {
   let currentProject
@@ -12,7 +33,7 @@ const Project = ({ params }: { params: { slug: string } }) => {
     if (projects[i].slug === params.slug) currentProject = projects[i]
 
   return (
-    <main className={`layout-page`}>
+    <main className={`layout-page ${styles.frame}`}>
       <HeroSection
         title={currentProject?.title}
         summary={currentProject?.summary}
@@ -26,6 +47,8 @@ const Project = ({ params }: { params: { slug: string } }) => {
 
       <section className={'layout-section p-section'}>
         <h2>Conclusion</h2>
+
+        {currentProject?.conclusion}
       </section>
 
       <ToolsSection tools={currentProject?.tools} />
@@ -42,3 +65,4 @@ export async function generateStaticParams() {
 }
 
 export default Project
+ */

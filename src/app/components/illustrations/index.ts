@@ -1,3 +1,6 @@
+export { default as AntDesignLogo } from './AntDesignLogo'
+export { default as FigmaLogo } from './FigmaLogo'
+export { default as NotionLogo } from './NotionLogo'
 export { default as Snowflake } from './Snowflake'
 export { default as Sparkle } from './Sparkle'
 export { default as VolvoWordmark } from './VolvoWordmark'
