@@ -5,9 +5,9 @@ const ConclusionSection = () => {
 
       <p className={'mb-4'}>
         The project was voted second favourite at the end of the innovation
-        sprint, which was personally encouraging and highlighted a shared
+        sprint, which was personally encouraging, but also highlighted a shared
         experience among developers in large organisations like Volvo Cars. This
-        recognition underscored a crucial point: while commercial applications
+        recognition underscores a crucial point: while commercial applications
         offer clear insights into system status and health, internal business
         tools often lack this level of transparency, especially when the
         end-user and purchaser are not the same person.
