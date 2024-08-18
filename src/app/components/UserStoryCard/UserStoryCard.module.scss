@@ -1,0 +1,11 @@
+.frame {
+  @apply rounded-lg bg-white p-6 pb-7;
+
+  p {
+    @apply w-full;
+  }
+
+  span {
+    @apply font-semibold;
+  }
+}

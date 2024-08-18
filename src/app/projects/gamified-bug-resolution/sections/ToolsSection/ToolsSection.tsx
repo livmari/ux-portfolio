@@ -1,14 +1,21 @@
 import { nanoid } from 'nanoid'
 
 import { ToolCard } from '@/components'
+import {
+  AntDesignLogo,
+  FigmaLogo,
+  NotionLogo,
+} from '@/app/components/illustrations'
 
 import styles from './ToolsSection.module.scss'
 
-interface ToolsSectionProps {
-  tools?: { illustration: React.ReactNode; link?: string }[]
-}
+const ToolsSection: React.FC = () => {
+  const tools = [
+    { illustration: <FigmaLogo />, link: 'https://www.figma.com/' },
+    { illustration: <NotionLogo />, link: 'https://www.notion.so/' },
+    { illustration: <AntDesignLogo />, link: 'https://ant.design/' },
+  ]
 
-const ToolsSection: React.FC<ToolsSectionProps> = ({ tools }) => {
   return (
     <section className={'layout-section p-section'}>
       <h2>Tools</h2>
