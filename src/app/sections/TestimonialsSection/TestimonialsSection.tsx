@@ -15,10 +15,8 @@ const TestimonialsSection: React.FC = () => {
     minWidth: SCREEN_LG,
   })
 
-  const testimonialsLength = testimonials.length
-
   // Testimonials array split two ways
-  const middle = Math.floor(testimonialsLength / 2) + 1
+  const middle = Math.floor(testimonials.length / 2) /* + 1 */
   const firstSmallViewportTestimonialsList = testimonials.slice(0, middle)
   const secondSmallViewportTestimonialsList = testimonials.slice(middle)
 

@@ -1,5 +1,10 @@
 const testimonials = [
   {
+    quote: `I had the pleasure of working with Liv Mari during her time as a UX Designer at Volvo Cars. Her exceptional organizational skills and articulate communication set her apart in the field. Her ability to clearly convey complex ideas and collaborate effectively with cross-functional teams made her an invaluable asset to our team. I highly recommend Liv Mari for any role that requires a keen eye for detail, strong organizational abilities, and excellent communication skills.`,
+    name: 'Malin Björk',
+    profession: 'Agile team manager @ Volvo Cars',
+  },
+  {
     quote: `Liv Mari has worked as a UX designer in two teams in my department at Volvo Cars. She's very professional and detail oriented. She explains and documents clearly so that it's easy for everyone involved to understand. She's also honest and not scared of communicating her opinion in a positive way. I can warmly recommend her.`,
     name: 'Desirée Roos',
     profession: 'Agile team manager @ Volvo Cars',
