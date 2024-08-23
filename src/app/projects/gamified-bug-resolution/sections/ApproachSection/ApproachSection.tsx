@@ -126,7 +126,7 @@ const ApproachSection: React.FC = () => {
 
         <ul>
           {painPoints.map(point => (
-            <li>{point}</li>
+            <li key={nanoid()}>{point}</li>
           ))}
         </ul>
       </div>
