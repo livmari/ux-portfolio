@@ -33,7 +33,7 @@ const config: Config = {
       colors: {
         gray: colors.zinc,
         primary: colors.emerald,
-        secondary: colors.amber,
+        secondary: colors.violet,
       },
     },
   },
