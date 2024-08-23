@@ -98,7 +98,7 @@ const ApproachSection: React.FC = () => {
         </p>
 
         {archetypes.map(archetype => (
-          <p>
+          <p key={nanoid()}>
             <span>{archetype.archetype}:</span> {archetype.description}
           </p>
         ))}
