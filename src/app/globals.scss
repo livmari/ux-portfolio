@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply text-xl subpixel-antialiased bg-gradient-to-t from-gray-100 to-gray-50 bg-cover bg-fixed text-gray-700;
+    @apply subpixel-antialiased bg-gradient-to-t from-gray-100 to-gray-50 bg-cover bg-fixed text-gray-700;
   }
 
   ::selection {
