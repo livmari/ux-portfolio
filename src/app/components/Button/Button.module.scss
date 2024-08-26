@@ -13,5 +13,5 @@
 }
 
 .link {
-  @apply bg-white border-white text-primary-600 hover:text-primary-800 hover:bg-secondary-50 hover:border-secondary-50;
+  @apply bg-white border-white text-primary-600 hover:text-primary-800 active:bg-primary-50 hover:border-primary-200;
 }
