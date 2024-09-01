@@ -11,7 +11,7 @@ interface ProjectPreviewProps {
   published: boolean
   slug: string
   company: string
-  bannerImage: { path: string; alt: string }
+  bannerImage: { path: string; alt: string; floating?: boolean }
 }
 
 const ProjectPreview: React.FC<ProjectPreviewProps> = ({
@@ -27,7 +27,9 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
         <img
           src={bannerImage.path}
           alt={bannerImage.alt}
-          className={styles.image}
+          className={`${styles.image} ${
+            !bannerImage.floating && 'rounded-lg shadow-sm border'
+          }`}
         />
       ) : (
         <ProjectImagePlaceholder

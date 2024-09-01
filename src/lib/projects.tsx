@@ -9,7 +9,7 @@ type ProjectType = {
   summary?: string
   duration: string
   company: string
-  bannerImage: { path: string; alt: string }
+  bannerImage: { path: string; alt: string; floating?: boolean }
   published: boolean
   slug: string
 }
@@ -50,13 +50,17 @@ const projects: ProjectType[] = [
     ], */
   },
   {
-    title: 'Component library and design system maintenance',
+    title: 'Component library strategy & mentorship',
     summary: '',
     duration: '2024',
     company: 'Volvo Cars',
-    bannerImage: { path: '', alt: '' },
-    published: false,
-    slug: 'complex-component-and-design-system-maintenance',
+    bannerImage: {
+      path: '/images/component_overview.svg',
+      alt: '',
+      floating: true,
+    },
+    published: true,
+    slug: 'component-strategy-&-mentorship',
   },
   {
     title: 'Wholly Health',
