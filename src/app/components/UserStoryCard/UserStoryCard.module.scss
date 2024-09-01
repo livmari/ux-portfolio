@@ -1,5 +1,5 @@
 .frame {
-  @apply rounded-lg bg-white p-6 pb-7;
+  @apply rounded-lg bg-white p-6 pb-7 border-l-4 border-primary-400;
 
   p {
     @apply w-full;
