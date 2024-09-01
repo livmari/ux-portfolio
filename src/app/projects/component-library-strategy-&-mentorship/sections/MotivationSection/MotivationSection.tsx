@@ -8,15 +8,15 @@ const MotivationSection: React.FC = () => {
       <div className={styles.content}>
         <p>
           The Volvo Cars web design system was tailored to integrate the
-          company's branding and values seamlessly into the company's primary
-          e-commerce website. And while successfully reaching this goal, since
-          the majority of the software used by Volvo is also built by Volvo,
-          it's equally important to evaluate how to build usable and enjoyable
+          company's branding and values seamlessly into its primary e-commerce
+          website. While this goal was successfully reached, given that the
+          majority of the software used by Volvo is also built by Volvo, it's
+          equally important to evaluate how to build usable and enjoyable
           internal tools for an entirely different set of users.
         </p>
 
         <p>
-          The main point of contention is the sizing. Business users demand more
+          The main point of contention is sizing. Business users demand more
           space for their data. This means that while large clickable areas on
           e-commerce buttons enhance accessibility for a broader range of users,
           in business software, the same horizontal padding (totaling 64 pixels
@@ -53,7 +53,7 @@ const MotivationSection: React.FC = () => {
             Moreover, while the combination of pure white and pure black creates
             a strong, clean contrast that aligns with the brand's minimalistic
             visual identity, applying this high-contrast scheme in a business
-            system will lead to eye strain over extended periods of use.
+            system may lead to eye strain over extended periods of use.
           </p>
 
           <div className={'md:col-span-2'}>
@@ -68,14 +68,14 @@ const MotivationSection: React.FC = () => {
             Moreover, while the combination of pure white and pure black creates
             a strong, clean contrast that aligns with the brand's minimalistic
             visual identity, applying this high-contrast scheme in a business
-            system will lead to eye strain over extended periods of use.
+            system may lead to eye strain over extended periods of use.
           </p>
         </div>
 
         <p>
           These points, along with the risk that relying on a single centralised
           platform team to provide custom Ui content for an entire organisation
-          the size of Volvo may slow down business operations, highlight the
+          the size of Volvo, may slow down business operations and highlight the
           need for locally managed solutions.
         </p>
       </div>
