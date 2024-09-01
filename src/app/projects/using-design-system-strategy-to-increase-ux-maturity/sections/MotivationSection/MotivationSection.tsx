@@ -76,7 +76,9 @@ const MotivationSection: React.FC = () => {
           These points, along with the risk that relying on a single centralised
           platform team to provide custom UI content for an entire organisation
           the size of Volvo may slow down business operations, highlight the
-          need for locally managed solutions.
+          need for locally managed solutions. At the same time, it also creates
+          an opportunity to engage DevOps to prioritise usability in
+          environments where UX maturity is usually low.
         </p>
       </div>
     </section>
