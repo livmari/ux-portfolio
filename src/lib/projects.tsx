@@ -29,7 +29,7 @@ const projects: ProjectType[] = [
     slug: 'gamified-bug-resolution',
   },
   {
-    title: 'Component library strategy & mentorship',
+    title: 'Using design system strategy to increase UX maturity',
     summary: '',
     duration: '2024',
     company: 'Volvo Cars',
@@ -39,7 +39,7 @@ const projects: ProjectType[] = [
       floating: true,
     },
     published: true,
-    slug: 'component-library-strategy-&-mentorship',
+    slug: 'using-design-system-strategy-to-increase-ux-maturity',
   },
   {
     title: 'Streamlined supply chain management',
@@ -62,7 +62,7 @@ const projects: ProjectType[] = [
       { label: 'Company', value: 'Volvo Cars' },
       { label: 'Role', value: 'Lead UX designer' },
     ], */
-  {
+  /* {
     title: 'Wholly Health',
     summary: '',
     duration: '2024',
@@ -70,7 +70,7 @@ const projects: ProjectType[] = [
     bannerImage: { path: '', alt: '' },
     published: false,
     slug: 'wholly-health',
-  },
+  }, */
 ]
 
 export { projects, type ProjectType }

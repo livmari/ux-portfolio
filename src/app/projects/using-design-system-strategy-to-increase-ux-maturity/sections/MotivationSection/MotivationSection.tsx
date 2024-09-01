@@ -9,7 +9,7 @@ const MotivationSection: React.FC = () => {
         <p>
           The Volvo Cars web design system was tailored to integrate the
           company's branding and values seamlessly into its primary e-commerce
-          website. While this goal was successfully reached, given that the
+          website. While this goal was successfully achieved, given that the
           majority of the software used by Volvo is also built by Volvo, it's
           equally important to evaluate how to build usable and enjoyable
           internal tools for an entirely different set of users.
@@ -53,7 +53,7 @@ const MotivationSection: React.FC = () => {
             Moreover, while the combination of pure white and pure black creates
             a strong, clean contrast that aligns with the brand's minimalistic
             visual identity, applying this high-contrast scheme in a business
-            system may lead to eye strain over extended periods of use.
+            system may lead to eye strain over long periods.
           </p>
 
           <div className={'md:col-span-2'}>
@@ -74,7 +74,7 @@ const MotivationSection: React.FC = () => {
 
         <p>
           These points, along with the risk that relying on a single centralised
-          platform team to provide custom Ui content for an entire organisation
+          platform team to provide custom UI content for an entire organisation
           the size of Volvo may slow down business operations, highlight the
           need for locally managed solutions.
         </p>

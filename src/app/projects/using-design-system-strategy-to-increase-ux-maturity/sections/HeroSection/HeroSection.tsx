@@ -15,11 +15,13 @@ const HeroSection: React.FC = ({}) => {
   return (
     <section className={`layout-section p-section ${styles.frame}`}>
       <h1 className={styles.heading}>
-        Component library strategy
-        <br />& mentorship
+        Using design system strategy to increase UX maturity
       </h1>
 
-      <p>To do</p>
+      <p>
+        Facilitating developer engagement through hands-on Figma training and
+        fostering a more user-centred approach to UI design
+      </p>
 
       <div className={styles.descriptors}>
         {descriptors.map(description => (
