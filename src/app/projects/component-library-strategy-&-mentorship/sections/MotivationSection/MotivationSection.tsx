@@ -75,7 +75,7 @@ const MotivationSection: React.FC = () => {
         <p>
           These points, along with the risk that relying on a single centralised
           platform team to provide custom Ui content for an entire organisation
-          the size of Volvo, may slow down business operations and highlight the
+          the size of Volvo may slow down business operations, highlight the
           need for locally managed solutions.
         </p>
       </div>
