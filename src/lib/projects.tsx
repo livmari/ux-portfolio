@@ -38,8 +38,8 @@ const projects: ProjectType[] = [
       alt: '',
       floating: true,
     },
-    published: false,
-    slug: 'component-strategy-&-mentorship',
+    published: true,
+    slug: 'component-library-strategy-&-mentorship',
   },
   {
     title: 'Streamlined supply chain management',
