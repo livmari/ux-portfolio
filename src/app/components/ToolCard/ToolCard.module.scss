@@ -1,7 +1,7 @@
 .frame {
-  @apply rounded-lg border bg-white p-6 shadow-sm hover:shadow-none hover:bg-gray-50;
+  @apply rounded-lg border bg-white p-4 shadow-sm hover:shadow-none hover:bg-gray-50;
 
   svg {
-    @apply h-16 w-16;
+    @apply h-10 w-10;
   }
 }
