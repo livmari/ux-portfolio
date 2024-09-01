@@ -20,7 +20,7 @@ const HeroSection: React.FC = ({}) => {
 
       <p>
         Facilitating developer engagement through hands-on Figma training and
-        fostering a more user-centred approach to UI design
+        fostering a more user-centred community approach
       </p>
 
       <div className={styles.descriptors}>
