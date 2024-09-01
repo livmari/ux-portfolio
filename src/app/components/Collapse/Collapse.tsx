@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 import styles from './Collapse.module.scss'
+import { Sparkle } from '../illustrations'
 
 type CollapseProps = {
   title: string
@@ -28,9 +29,8 @@ const Collapse: React.FC<CollapseProps> = ({
           showContent && styles.collapsed
         }`}
       >
+        <Sparkle />
         <h2>{title}</h2>
-
-        <XMarkIcon />
       </button>
 
       <div className={`${styles.content} ${showContent && styles.collapsed}`}>

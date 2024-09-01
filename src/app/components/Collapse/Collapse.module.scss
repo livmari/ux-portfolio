@@ -11,21 +11,21 @@
 }
 
 .visibilityToggle {
-  @apply w-full text-left flex gap-4 justify-between items-center text-xl font-medium hover:text-primary-600;
+  @apply w-full text-left flex gap-2 items-center text-xl font-medium hover:text-primary-600;
 
   svg {
-    @apply h-6 w-6 duration-500;
+    @apply h-4 w-4 duration-500 rotate-45;
   }
 }
 
 .visibilityToggle.collapsed {
   svg {
-    @apply -rotate-45;
+    @apply rotate-0;
   }
 }
 
 .content {
-  @apply pt-6 pb-8 duration-300;
+  @apply pt-2 pb-4 duration-300;
 }
 
 .content.collapsed {
