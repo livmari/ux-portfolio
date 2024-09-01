@@ -38,7 +38,7 @@ const projects: ProjectType[] = [
       alt: '',
       floating: true,
     },
-    published: true,
+    published: false,
     slug: 'component-strategy-&-mentorship',
   },
   {
