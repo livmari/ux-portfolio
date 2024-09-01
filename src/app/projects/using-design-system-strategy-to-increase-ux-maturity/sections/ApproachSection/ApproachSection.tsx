@@ -38,11 +38,11 @@ const ApproachSection: React.FC = () => {
         <img src={'/images/design_system-pattern_example.svg'} />
 
         <p>
-          I then organised training sessions for developers, focusing on how to
-          apply UI components with usability in mind. The goal was to empower
-          them to adapt these components for various use cases, rather than
-          relying on a one-size-fits-all approach. By stepping away from the
-          idea of using the same component everywhere just because it's
+          I then organised whiteboarding workshops with developers, focusing on
+          how to apply UI components with usability in mind. The goal was to
+          empower them to adapt these components for various use cases, rather
+          than relying on a one-size-fits-all approach. By stepping away from
+          the idea of using the same component everywhere just because it's
           available, we encouraged a more thoughtful application that
           prioritises usability. This collaborative approach helped developers
           become more engaged with the user experience, ultimately raising the
