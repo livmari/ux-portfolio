@@ -29,27 +29,6 @@ const projects: ProjectType[] = [
     slug: 'gamified-bug-resolution',
   },
   {
-    title: 'Streamlined supply chain management',
-    summary: '',
-    duration: '2024',
-    company: 'Volvo Cars',
-    bannerImage: {
-      path: '/images/supply_chain-work_item.svg',
-      alt: '',
-    },
-    published: false,
-    slug: 'streamlined-supply-chain-management',
-    /* areas: 'Research, strategy & UX design', */
-    /* descriptors: [
-      {
-        label: 'Areas',
-        value: 'Research, strategy & UX design',
-      },
-      { label: 'Company', value: 'Volvo Cars' },
-      { label: 'Role', value: 'Lead UX designer' },
-    ], */
-  },
-  {
     title: 'Component library strategy & mentorship',
     summary: '',
     duration: '2024',
@@ -62,6 +41,27 @@ const projects: ProjectType[] = [
     published: true,
     slug: 'component-strategy-&-mentorship',
   },
+  {
+    title: 'Streamlined supply chain management',
+    summary: '',
+    duration: '2024',
+    company: 'Volvo Cars',
+    bannerImage: {
+      path: '/images/supply_chain-work_item.svg',
+      alt: '',
+    },
+    published: false,
+    slug: 'streamlined-supply-chain-management',
+  },
+  /* areas: 'Research, strategy & UX design', */
+  /* descriptors: [
+      {
+        label: 'Areas',
+        value: 'Research, strategy & UX design',
+      },
+      { label: 'Company', value: 'Volvo Cars' },
+      { label: 'Role', value: 'Lead UX designer' },
+    ], */
   {
     title: 'Wholly Health',
     summary: '',
