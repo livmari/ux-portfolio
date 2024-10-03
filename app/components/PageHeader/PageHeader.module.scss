@@ -25,7 +25,7 @@
   }
 
   .currentPage {
-    @apply font-medium text-gray-700;
+    @apply font-medium text-gray-800;
   }
 
   .navLink,
@@ -44,7 +44,7 @@
 }
 
 .closeIcon {
-  @apply h-6 w-6 text-gray-700; // Adjust icon size and color to match text color
+  @apply h-6 w-6 text-gray-800; // Adjust icon size and color to match text color
 }
 
 .navOverlay {
@@ -55,6 +55,6 @@
   }
 
   .currentPage {
-    @apply font-bold text-gray-700; // Highlight current page link with the same color
+    @apply font-bold text-gray-800; // Highlight current page link with the same color
   }
 }
