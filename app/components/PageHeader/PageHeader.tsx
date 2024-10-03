@@ -20,6 +20,19 @@ const PageHeader: React.FC = () => {
     setIsOpen(false) // Close the overlay
   }, [pathname])
 
+  // Function to copy email to clipboard
+  const copyToClipboard = () => {
+    const email = 'livmari.lervik@icloud.com'
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert('Email copied to clipboard!') // Notify user
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err) // Handle error
+      })
+  }
+
   return (
     <header className={styles.header}>
       <button className={styles.homeButton}>
@@ -51,10 +64,10 @@ const PageHeader: React.FC = () => {
             >
               About
             </Link>
-            <a href='' className={styles.navLink} onClick={toggleOverlay}>
+            {/* <a href="" className={styles.navLink} onClick={toggleOverlay}>
               Resume
-            </a>
-            <button className={styles.navLink} onClick={toggleOverlay}>
+            </a> */}
+            <button className={styles.navLink} onClick={copyToClipboard}>
               Copy email
             </button>
           </nav>
@@ -73,10 +86,10 @@ const PageHeader: React.FC = () => {
           className={`${styles.navLink} ${pathname === '/about' ? styles.currentPage : ''}`}>
           About
         </Link>
-        <a href='' className={styles.navLink}>
-          Resume
-        </a>
-        <button className={styles.navLink}>Copy email</button>
+        {/* <a href="" className={styles.navLink}>Resume</a> */}
+        <button className={styles.navLink} onClick={copyToClipboard}>
+          Copy email
+        </button>
       </nav>
     </header>
   )
