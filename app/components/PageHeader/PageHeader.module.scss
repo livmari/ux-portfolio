@@ -30,13 +30,13 @@
 
   .navLink,
   .currentPage {
-    @apply mb-0 transition-all hover:mb-1;
+    @apply mb-0 transition-all duration-300 hover:mb-1;
   }
 }
 
 // Overlay styles
 .overlay {
-  @apply fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-75; // Full screen overlay with background
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-white; // Full screen overlay with white background
 }
 
 .closeButton {
@@ -44,17 +44,17 @@
 }
 
 .closeIcon {
-  @apply h-6 w-6 text-white; // Adjust icon size and color
+  @apply h-6 w-6 text-gray-700; // Adjust icon size and color to match text color
 }
 
 .navOverlay {
   @apply flex flex-col items-center space-y-6; // Centered and spaced vertical links
 
   .navLink {
-    @apply text-lg text-white; // Styles for links in overlay
+    @apply text-2xl text-gray-500; // Increase font size for better visibility on mobile
   }
 
   .currentPage {
-    @apply font-bold; // Highlight current page link
+    @apply font-bold text-gray-700; // Highlight current page link with the same color
   }
 }

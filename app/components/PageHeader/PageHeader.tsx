@@ -33,9 +33,14 @@ const PageHeader: React.FC = () => {
       })
   }
 
+  // Function to scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }) // Smooth scroll to top
+  }
+
   return (
     <header className={styles.header}>
-      <button className={styles.homeButton}>
+      <button className={styles.homeButton} onClick={scrollToTop}>
         Hi, I'm <span className={styles.emphasis}>Liv Mari</span>
       </button>
 

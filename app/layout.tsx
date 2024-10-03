@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={'en'}>
-      <body className={mulish.className}>
+      <body className={`${mulish.className} sm:px-4 lg:px-10`}>
         <PageHeader />
 
         {children}
