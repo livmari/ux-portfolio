@@ -1,0 +1,25 @@
+.card {
+  @apply grid w-full gap-3;
+}
+
+.image {
+  @apply w-full rounded-2xl bg-gray-300 transition-all duration-500;
+}
+
+.card:hover {
+  .image {
+    @apply -rotate-1 shadow-sm;
+  }
+}
+
+.textWrapper {
+  @apply grid gap-1 text-left;
+}
+
+.title {
+  @apply font-semibold;
+}
+
+.subtitle {
+  @apply text-sm italic text-gray-500;
+}

@@ -1,5 +1,5 @@
 .header {
-  @apply flex w-full items-end justify-between bg-gray-50 px-6 py-4;
+  @apply sticky flex w-full items-end justify-between bg-gray-50 px-6 pb-4 pt-6;
 }
 
 .homeButton {

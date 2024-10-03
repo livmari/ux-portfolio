@@ -1,0 +1,7 @@
+.section {
+  @apply grid gap-16 px-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3;
+
+  .col {
+    @apply flex flex-col gap-10;
+  }
+}

@@ -62,6 +62,7 @@ const PageHeader: React.FC = () => {
             >
               Projects
             </Link>
+
             <Link
               href='/about'
               className={`${styles.navLink} ${pathname === '/about' ? styles.currentPage : ''}`}
