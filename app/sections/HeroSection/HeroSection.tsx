@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   ]
 
   let firstRow = `I design digital experiences `
-  let secondRow = `to bring joy and empower users`
+  let secondRow = `that bring joy and empower users`
 
   let firstLetters = firstRow.split('')
   let secondLetters = secondRow.split('')
