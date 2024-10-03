@@ -14,7 +14,7 @@ const config: Config = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.stone,
+      gray: colors.zinc,
       primary: colors.indigo,
       'playful-blue': '#99B7F5',
       'playful-green': '#267F53',
