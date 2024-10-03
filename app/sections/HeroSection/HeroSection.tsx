@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
     styles.yellow,
   ]
 
-  let firstRow = `I tailor digital experiences `
+  let firstRow = `I design digital experiences `
   let secondRow = `to bring joy and empower users`
 
   let firstLetters = firstRow.split('')
