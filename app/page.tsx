@@ -11,7 +11,7 @@ const Home = () => {
 
       <p className={'mb-10 w-full text-center italic text-gray-500'}>
         Thank you for visiting{' '}
-        <HeartIcon className={'fill-playful-pink inline h-4 w-4'} />
+        <HeartIcon className={'inline h-4 w-4 fill-playful-pink'} />
       </p>
     </main>
   )

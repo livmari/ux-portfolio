@@ -1,8 +1,26 @@
 import { nanoid } from 'nanoid'
 
+import { Description } from '@/app/components'
+
 import styles from './HeroSection.module.scss'
 
-const HeroSection: React.FC = () => {
+interface Props {
+  title: string
+  useCase?: 'home' | 'project'
+  image?: { path: string; alt: string }
+  year?: string
+  company?: string
+  descriptions?: { label: string; value?: string; values?: string[] }[]
+}
+
+const HeroSection: React.FC<Props> = ({
+  title = '',
+  useCase = 'home',
+  image,
+  year,
+  company,
+  descriptions,
+}) => {
   let colorStyles = [
     styles.blue,
     styles.green,
@@ -24,31 +42,81 @@ const HeroSection: React.FC = () => {
     (_, index) => colorStyles[index % colorStyles.length],
   )
 
-  return (
-    <section className={styles.section}>
-      <h1 className={styles.title}>
-        {firstLetters.map((symbol, index) => (
-          <span
-            className={`${symbol !== ' ' ? styles.symbol : ''} ${
-              symbol !== ' ' ? firstRowColors[index] : ''
-            }`}
-            key={nanoid()}>
-            {symbol}
-          </span>
-        ))}
-
-        <br className={'hidden sm:block'} />
-
-        {secondLetters.map((symbol, index) => (
-          <span
-            className={symbol !== ' ' ? secondRowColors[index] : ''}
-            key={nanoid()}>
-            {symbol}
-          </span>
-        ))}
-      </h1>
-    </section>
+  const titleLetters = title.split('')
+  const rainbowTitle = titleLetters.map(
+    (_, index) => colorStyles[index % colorStyles.length],
   )
+
+  if (useCase === 'home')
+    return (
+      <section className={styles.section}>
+        <h1 className={styles.title}>
+          {firstLetters.map((symbol, index) => (
+            <span
+              className={`${symbol !== ' ' ? styles.symbol : ''} ${
+                symbol !== ' ' ? firstRowColors[index] : ''
+              }`}
+              key={nanoid()}>
+              {symbol}
+            </span>
+          ))}
+
+          <br className={'hidden sm:block'} />
+
+          {secondLetters.map((symbol, index) => (
+            <span
+              className={symbol !== ' ' ? secondRowColors[index] : ''}
+              key={nanoid()}>
+              {symbol}
+            </span>
+          ))}
+        </h1>
+      </section>
+    )
+  else if (useCase === 'project' && title)
+    return (
+      <section className={styles.section}>
+        <div>
+          {year && company && (
+            <p className={styles.callout}>
+              {company}, {year}
+            </p>
+          )}
+          <h1 className={styles.projectTitle}>
+            {titleLetters.map((symbol, index) => (
+              <span
+                className={symbol !== ' ' ? rainbowTitle[index] : ''}
+                key={nanoid()}>
+                {symbol}
+              </span>
+            ))}
+          </h1>
+        </div>
+
+        {image && (
+          <img src={image.path} alt={image.alt} className={styles.image} />
+        )}
+
+        <div>
+          {descriptions &&
+            descriptions.map(
+              (description: {
+                label: string
+                value?: string
+                values?: string[]
+              }) => (
+                <Description
+                  label={description.label}
+                  value={description.value}
+                  values={description.values}
+                  key={nanoid()}
+                  style={'tags'}
+                />
+              ),
+            )}
+        </div>
+      </section>
+    )
 }
 
 export default HeroSection
