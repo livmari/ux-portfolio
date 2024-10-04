@@ -75,10 +75,11 @@ const HeroSection: React.FC<Props> = ({
     )
   else if (useCase === 'project' && title)
     return (
-      <section className={styles.section}>
+      <section
+        className={`${styles.section} container mx-auto max-w-screen-2xl`}>
         <div>
           {year && company && (
-            <p className={styles.callout}>
+            <p className={'callout'}>
               {company}, {year}
             </p>
           )}
