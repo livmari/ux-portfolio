@@ -4,10 +4,10 @@ const projects = [
       path: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: '',
     },
-    title: 'Eliminating knowledge silos by enabling cross team collaboration',
+    title: 'Good-bye knowledge silos, hello cross-functional collaboration',
     subtitle:
-      'Research, strategy, workshop facilitation, stakeholder management and design for Volvo Cars, 2024',
-    slug: 'eliminating-knowledge-silos-by-enabling-cross-team-collaboration',
+      'Research, strategy, requirements engineering, workshop facilitation, stakeholder management and design for Volvo Cars, 2024',
+    slug: 'good-bye-knowledge-silos-hello-cross-functional-collaboration',
   },
   {
     image: {

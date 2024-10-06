@@ -1,4 +1,5 @@
-import { HeroSection, TextSection } from '@/app/sections'
+import { HeroSection, TextSection, VectorSection } from '@/app/sections'
+import { StakeholderDiagram } from '@/app/projects/good-bye-knowledge-silos-hello-cross-functional-collaboration/components'
 
 const project = {
   image: {
@@ -6,14 +7,12 @@ const project = {
     alt: '',
   },
   title: 'Eliminating knowledge silos by enabling cross team collaboration',
-  subtitle:
-    'Research, strategy, workshop facilitation, stakeholder management and design for Volvo Cars, 2024',
   slug: 'eliminating-knowledge-silos-by-enabling-cross-team-collaboration',
   year: '2024',
   company: 'Volvo Cars',
   descriptions: [
     {
-      label: 'Responsibilities',
+      label: 'My role',
       values: [
         'Research',
         'Strategy',
@@ -26,22 +25,16 @@ const project = {
   ],
   summary: [
     <p>
-      Volvo Cars supply chain management, made up of hundreds of buyers,
-      specialists and strategic planners, was facing a challenge: important
-      sourcing information for early-stage projects was spread across Excel
-      sheets, emails, and meeting discussions. This created isolated pockets of
-      knowledge, making it difficult for teams to collaborate and access
-      up-to-date information.
-    </p>,
-    <p>
-      The need was for a solution that would allow different teams to work
-      together more efficiently, ensuring sourcing data was captured in a more
-      transparent and accessible way. The goal was to eliminate these knowledge
-      silos, making it easier for everyone to access and contribute, while
-      reducing the risk of losing critical information along the way, contribute
-      to the overall data quality of the ecosystem.
+      At Volvo Cars, hundreds of people collaborate to bring new cars to market.
+      A large part of the surrounding supply chain management takes place in
+      meetings, emails, and Excel sheets stored across various devices. This has
+      created isolated pockets of knowledge, where valuable data gets lost. To
+      change this culture, the available business tools need to make it easier
+      for different teams to share and contribute information, ultimately
+      improving data quality and automation over time.
     </p>,
   ],
+  approach: [<p></p>],
 }
 
 const Project = () => {
@@ -57,6 +50,10 @@ const Project = () => {
       />
 
       <TextSection title={'Motivation'} paragraphs={project.summary} />
+
+      <VectorSection svg={<StakeholderDiagram />} />
+
+      <TextSection title={'Approach'} paragraphs={project.approach} />
     </main>
   )
 }
