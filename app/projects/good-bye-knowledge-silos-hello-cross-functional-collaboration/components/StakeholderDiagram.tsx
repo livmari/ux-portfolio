@@ -10,7 +10,7 @@ const StakeholderDiagram: React.FC<Props> = ({ className }) => {
       viewBox={'0 0 915 270'}
       fill={'none'}
       xmlns={'http://www.w3.org/2000/svg'}
-      className={`${className} w-full rounded-2xl bg-white px-6 sm:py-6 md:py-8`}>
+      className={`${className} w-full rounded-2xl bg-white px-6 sm:min-h-96 sm:py-8 md:py-10`}>
       <rect
         x={'257'}
         y={'144'}
