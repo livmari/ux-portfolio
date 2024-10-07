@@ -1,0 +1,7 @@
+.section {
+  @apply container mx-auto max-w-screen-2xl;
+}
+
+.image {
+  @apply w-full rounded-2xl object-contain;
+}

@@ -7,7 +7,7 @@ import styles from './HeroSection.module.scss'
 interface Props {
   title: string
   useCase?: 'home' | 'project'
-  image?: { path: string; alt: string }
+  image?: { path: string; alt?: string }
   year?: string
   company?: string
   descriptions?: { label: string; value?: string; values?: string[] }[]

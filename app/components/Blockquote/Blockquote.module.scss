@@ -1,0 +1,14 @@
+.quoteContainer {
+  @apply flex gap-4 sm:gap-8;
+}
+
+.icon {
+  @apply aspect-square max-h-16 min-h-10 fill-playful-pink sm:max-h-20 sm:min-h-16;
+}
+
+.quote {
+  @apply mb-2 block text-xl font-semibold;
+}
+
+.cite {
+}

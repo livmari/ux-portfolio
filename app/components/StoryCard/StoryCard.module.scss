@@ -1,0 +1,11 @@
+.card {
+  @apply grid items-center justify-center rounded-2xl bg-white p-6;
+
+  p {
+    @apply mb-0;
+  }
+}
+
+.emphasis {
+  @apply font-semibold;
+}

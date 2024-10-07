@@ -22,10 +22,24 @@
 
   li {
     @apply list-inside list-disc;
+
+    span {
+      @apply font-semibold;
+    }
   }
 
   p {
     @apply mb-2;
+  }
+}
+
+@layer components {
+  .page-layout {
+    @apply mt-20 grid gap-20 sm:mt-32 sm:gap-32;
+  }
+
+  .page-section {
+    @apply container mx-auto w-full px-6 2xl:max-w-screen-md;
   }
 }
 
