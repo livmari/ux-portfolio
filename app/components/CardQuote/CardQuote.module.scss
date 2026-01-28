@@ -1,0 +1,15 @@
+.card {
+  @apply flex flex-col gap-4 rounded-2xl bg-white p-6;
+}
+
+.footer {
+  @apply bg-white;
+}
+
+.button {
+  @apply rounded-full border bg-gray-50 p-2 font-medium hover:border-playful-blue hover:bg-white hover:shadow-sm;
+}
+
+.buttonIcon {
+  @apply h-6;
+}

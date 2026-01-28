@@ -1,4 +1,5 @@
 export { default as Blockquote } from './Blockquote/Blockquote'
+export { default as CardQuote } from './CardQuote/CardQuote'
 export { default as Description } from './Description/Description'
 export { default as PageHeader } from './PageHeader/PageHeader'
 export { default as ProjectCard } from './ProjectCard/ProjectCard'
